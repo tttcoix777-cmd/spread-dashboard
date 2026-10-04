@@ -1,0 +1,5 @@
+attempt_at,date,dow,nikkei,spread,ma20,ma50,spread_10d_change,signal_b,signal_c2,update_status,error
+2026-10-04T17:12:53+09:00,2026-10-02,51161.0,69763.0,-18602.0,-13914.4,-12977.5,-5106.0,False,False,DATA UPDATE ERROR,'NoneType' object has no attribute 'split'
+2026-10-04T17:13:19+09:00,2026-10-02,51161.0,69763.0,-18602.0,-13914.4,-12977.5,-5106.0,False,False,DATA UPDATE ERROR,公式の取引開始・最終日を確認できません: nikkei225
+2026-10-04T17:14:00+09:00,2026-10-02,51161.0,69763.0,-18602.0,-13914.4,-12977.5,-5106.0,False,False,DATA UPDATE ERROR,TFX商品名・年限・日付・列形式が不一致
+2026-10-04T17:14:46+09:00,2026-10-02,51161.0,69763.0,-18602.0,-13914.4,-12977.5,-5106.0,False,False,NO_NEW_DATA,

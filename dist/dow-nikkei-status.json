@@ -1,0 +1,1477 @@
+{
+  "last_attempt_at": "2026-10-04T17:14:46+09:00",
+  "schedule_time_jst": "10:30",
+  "error": "",
+  "update_status": "NO_NEW_DATA",
+  "stale_attempt_hours": 36,
+  "added_dates": [],
+  "history": [
+    {
+      "date": "2026-01-02",
+      "ny_dow_open": 48162.0,
+      "ny_dow_close": 48387.0,
+      "nikkei225_open": 50560.0,
+      "nikkei225_close": 51143.0
+    },
+    {
+      "date": "2026-01-05",
+      "ny_dow_open": 48394.0,
+      "ny_dow_close": 48993.0,
+      "nikkei225_open": 51103.0,
+      "nikkei225_close": 52252.0
+    },
+    {
+      "date": "2026-01-06",
+      "ny_dow_open": 48989.0,
+      "ny_dow_close": 49462.0,
+      "nikkei225_open": 52295.0,
+      "nikkei225_close": 52127.0
+    },
+    {
+      "date": "2026-01-07",
+      "ny_dow_open": 49500.0,
+      "ny_dow_close": 48978.0,
+      "nikkei225_open": 52180.0,
+      "nikkei225_close": 52030.0
+    },
+    {
+      "date": "2026-01-08",
+      "ny_dow_open": 49022.0,
+      "ny_dow_close": 49263.0,
+      "nikkei225_open": 51892.0,
+      "nikkei225_close": 51656.0
+    },
+    {
+      "date": "2026-01-09",
+      "ny_dow_open": 49344.0,
+      "ny_dow_close": 49508.0,
+      "nikkei225_open": 51591.0,
+      "nikkei225_close": 53631.0
+    },
+    {
+      "date": "2026-01-12",
+      "ny_dow_open": 49453.0,
+      "ny_dow_close": 49589.0,
+      "nikkei225_open": 53778.0,
+      "nikkei225_close": 54211.0
+    },
+    {
+      "date": "2026-01-13",
+      "ny_dow_open": 49540.0,
+      "ny_dow_close": 49194.0,
+      "nikkei225_open": 54208.0,
+      "nikkei225_close": 54020.0
+    },
+    {
+      "date": "2026-01-14",
+      "ny_dow_open": 49167.0,
+      "ny_dow_close": 49172.0,
+      "nikkei225_open": 54028.0,
+      "nikkei225_close": 54134.0
+    },
+    {
+      "date": "2026-01-15",
+      "ny_dow_open": 49127.0,
+      "ny_dow_close": 49430.0,
+      "nikkei225_open": 54012.0,
+      "nikkei225_close": 54034.0
+    },
+    {
+      "date": "2026-01-16",
+      "ny_dow_open": 49487.0,
+      "ny_dow_close": 49347.0,
+      "nikkei225_open": 54093.0,
+      "nikkei225_close": 53779.0
+    },
+    {
+      "date": "2026-01-19",
+      "ny_dow_open": 49084.0,
+      "ny_dow_close": 48981.0,
+      "nikkei225_open": 53548.0,
+      "nikkei225_close": 53583.0
+    },
+    {
+      "date": "2026-01-20",
+      "ny_dow_open": 48975.0,
+      "ny_dow_close": 48512.0,
+      "nikkei225_open": 53589.0,
+      "nikkei225_close": 52206.0
+    },
+    {
+      "date": "2026-01-21",
+      "ny_dow_open": 48563.0,
+      "ny_dow_close": 49099.0,
+      "nikkei225_open": 52275.0,
+      "nikkei225_close": 53286.0
+    },
+    {
+      "date": "2026-01-22",
+      "ny_dow_open": 49195.0,
+      "ny_dow_close": 49387.0,
+      "nikkei225_open": 53385.0,
+      "nikkei225_close": 54109.0
+    },
+    {
+      "date": "2026-01-23",
+      "ny_dow_open": 49365.0,
+      "ny_dow_close": 49102.0,
+      "nikkei225_open": 54111.0,
+      "nikkei225_close": 52970.0
+    },
+    {
+      "date": "2026-01-26",
+      "ny_dow_open": 48919.0,
+      "ny_dow_close": 49427.0,
+      "nikkei225_open": 52408.0,
+      "nikkei225_close": 52664.0
+    },
+    {
+      "date": "2026-01-27",
+      "ny_dow_open": 49239.0,
+      "ny_dow_close": 49011.0,
+      "nikkei225_open": 52704.0,
+      "nikkei225_close": 52919.0
+    },
+    {
+      "date": "2026-01-28",
+      "ny_dow_open": 49004.0,
+      "ny_dow_close": 49041.0,
+      "nikkei225_open": 53040.0,
+      "nikkei225_close": 53776.0
+    },
+    {
+      "date": "2026-01-29",
+      "ny_dow_open": 48939.0,
+      "ny_dow_close": 49069.0,
+      "nikkei225_open": 53990.0,
+      "nikkei225_close": 53403.0
+    },
+    {
+      "date": "2026-01-30",
+      "ny_dow_open": 48958.0,
+      "ny_dow_close": 48901.0,
+      "nikkei225_open": 53313.0,
+      "nikkei225_close": 53530.0
+    },
+    {
+      "date": "2026-02-02",
+      "ny_dow_open": 48798.0,
+      "ny_dow_close": 49428.0,
+      "nikkei225_open": 53762.0,
+      "nikkei225_close": 53996.0
+    },
+    {
+      "date": "2026-02-03",
+      "ny_dow_open": 49444.0,
+      "ny_dow_close": 49237.0,
+      "nikkei225_open": 54029.0,
+      "nikkei225_close": 54164.0
+    },
+    {
+      "date": "2026-02-04",
+      "ny_dow_open": 49259.0,
+      "ny_dow_close": 49458.0,
+      "nikkei225_open": 54240.0,
+      "nikkei225_close": 54566.0
+    },
+    {
+      "date": "2026-02-05",
+      "ny_dow_open": 49512.0,
+      "ny_dow_close": 48912.0,
+      "nikkei225_open": 54734.0,
+      "nikkei225_close": 53991.0
+    },
+    {
+      "date": "2026-02-06",
+      "ny_dow_open": 48782.0,
+      "ny_dow_close": 50097.0,
+      "nikkei225_open": 53698.0,
+      "nikkei225_close": 56522.0
+    },
+    {
+      "date": "2026-02-09",
+      "ny_dow_open": 50213.0,
+      "ny_dow_close": 50128.0,
+      "nikkei225_open": 58250.0,
+      "nikkei225_close": 57292.0
+    },
+    {
+      "date": "2026-02-10",
+      "ny_dow_open": 50100.0,
+      "ny_dow_close": 50199.0,
+      "nikkei225_open": 57252.0,
+      "nikkei225_close": 57925.0
+    },
+    {
+      "date": "2026-02-11",
+      "ny_dow_open": 50276.0,
+      "ny_dow_close": 50146.0,
+      "nikkei225_open": 57900.0,
+      "nikkei225_close": 58230.0
+    },
+    {
+      "date": "2026-02-12",
+      "ny_dow_open": 50140.0,
+      "ny_dow_close": 49467.0,
+      "nikkei225_open": 58258.0,
+      "nikkei225_close": 56856.0
+    },
+    {
+      "date": "2026-02-13",
+      "ny_dow_open": 49492.0,
+      "ny_dow_close": 49506.0,
+      "nikkei225_open": 57233.0,
+      "nikkei225_close": 57709.0
+    },
+    {
+      "date": "2026-02-16",
+      "ny_dow_open": 49518.0,
+      "ny_dow_close": 49545.0,
+      "nikkei225_open": 57752.0,
+      "nikkei225_close": 56912.0
+    },
+    {
+      "date": "2026-02-17",
+      "ny_dow_open": 49612.0,
+      "ny_dow_close": 49562.0,
+      "nikkei225_open": 56870.0,
+      "nikkei225_close": 57220.0
+    },
+    {
+      "date": "2026-02-18",
+      "ny_dow_open": 49545.0,
+      "ny_dow_close": 49669.0,
+      "nikkei225_open": 57078.0,
+      "nikkei225_close": 57676.0
+    },
+    {
+      "date": "2026-02-19",
+      "ny_dow_open": 49700.0,
+      "ny_dow_close": 49417.0,
+      "nikkei225_open": 57696.0,
+      "nikkei225_close": 57184.0
+    },
+    {
+      "date": "2026-02-20",
+      "ny_dow_open": 49425.0,
+      "ny_dow_close": 49630.0,
+      "nikkei225_open": 57267.0,
+      "nikkei225_close": 57283.0
+    },
+    {
+      "date": "2026-02-23",
+      "ny_dow_open": 49529.0,
+      "ny_dow_close": 48824.0,
+      "nikkei225_open": 57142.0,
+      "nikkei225_close": 56926.0
+    },
+    {
+      "date": "2026-02-24",
+      "ny_dow_open": 48863.0,
+      "ny_dow_close": 49210.0,
+      "nikkei225_open": 56895.0,
+      "nikkei225_close": 58060.0
+    },
+    {
+      "date": "2026-02-25",
+      "ny_dow_open": 49185.0,
+      "ny_dow_close": 49498.0,
+      "nikkei225_open": 58221.0,
+      "nikkei225_close": 59794.0
+    },
+    {
+      "date": "2026-02-26",
+      "ny_dow_open": 49474.0,
+      "ny_dow_close": 49495.0,
+      "nikkei225_open": 59731.0,
+      "nikkei225_close": 58807.0
+    },
+    {
+      "date": "2026-02-27",
+      "ny_dow_open": 49259.0,
+      "ny_dow_close": 48985.0,
+      "nikkei225_open": 58607.0,
+      "nikkei225_close": 58735.0
+    },
+    {
+      "date": "2026-03-02",
+      "ny_dow_open": 48449.0,
+      "ny_dow_close": 48889.0,
+      "nikkei225_open": 58097.0,
+      "nikkei225_close": 57816.0
+    },
+    {
+      "date": "2026-03-03",
+      "ny_dow_open": 48811.0,
+      "ny_dow_close": 48500.0,
+      "nikkei225_open": 57631.0,
+      "nikkei225_close": 55461.0
+    },
+    {
+      "date": "2026-03-04",
+      "ny_dow_open": 48421.0,
+      "ny_dow_close": 48735.0,
+      "nikkei225_open": 54947.0,
+      "nikkei225_close": 56478.0
+    },
+    {
+      "date": "2026-03-05",
+      "ny_dow_open": 48753.0,
+      "ny_dow_close": 47926.0,
+      "nikkei225_open": 56408.0,
+      "nikkei225_close": 54725.0
+    },
+    {
+      "date": "2026-03-06",
+      "ny_dow_open": 47981.0,
+      "ny_dow_close": 47487.0,
+      "nikkei225_open": 54679.0,
+      "nikkei225_close": 54110.0
+    },
+    {
+      "date": "2026-03-09",
+      "ny_dow_open": 46648.0,
+      "ny_dow_close": 47740.0,
+      "nikkei225_open": 52221.0,
+      "nikkei225_close": 54746.0
+    },
+    {
+      "date": "2026-03-10",
+      "ny_dow_open": 47608.0,
+      "ny_dow_close": 47726.0,
+      "nikkei225_open": 54888.0,
+      "nikkei225_close": 54962.0
+    },
+    {
+      "date": "2026-03-11",
+      "ny_dow_open": 47726.0,
+      "ny_dow_close": 47415.0,
+      "nikkei225_open": 54949.0,
+      "nikkei225_close": 54897.0
+    },
+    {
+      "date": "2026-03-12",
+      "ny_dow_open": 47038.0,
+      "ny_dow_close": 46687.0,
+      "nikkei225_open": 54151.0,
+      "nikkei225_close": 53895.0
+    },
+    {
+      "date": "2026-03-13",
+      "ny_dow_open": 46795.0,
+      "ny_dow_close": 46569.0,
+      "nikkei225_open": 53798.0,
+      "nikkei225_close": 53337.0
+    },
+    {
+      "date": "2026-03-16",
+      "ny_dow_open": 46615.0,
+      "ny_dow_close": 46974.0,
+      "nikkei225_open": 53412.0,
+      "nikkei225_close": 54596.0
+    },
+    {
+      "date": "2026-03-17",
+      "ny_dow_open": 46946.0,
+      "ny_dow_close": 47019.0,
+      "nikkei225_open": 54385.0,
+      "nikkei225_close": 54414.0
+    },
+    {
+      "date": "2026-03-18",
+      "ny_dow_open": 47008.0,
+      "ny_dow_close": 46219.0,
+      "nikkei225_open": 54475.0,
+      "nikkei225_close": 53817.0
+    },
+    {
+      "date": "2026-03-19",
+      "ny_dow_open": 46171.0,
+      "ny_dow_close": 46038.0,
+      "nikkei225_open": 53695.0,
+      "nikkei225_close": 53153.0
+    },
+    {
+      "date": "2026-03-20",
+      "ny_dow_open": 46148.0,
+      "ny_dow_close": 45599.0,
+      "nikkei225_open": 53471.0,
+      "nikkei225_close": 51395.0
+    },
+    {
+      "date": "2026-03-23",
+      "ny_dow_open": 45574.0,
+      "ny_dow_close": 46259.0,
+      "nikkei225_open": 51346.0,
+      "nikkei225_close": 53324.0
+    },
+    {
+      "date": "2026-03-24",
+      "ny_dow_open": 46336.0,
+      "ny_dow_close": 46144.0,
+      "nikkei225_open": 53366.0,
+      "nikkei225_close": 52756.0
+    },
+    {
+      "date": "2026-03-25",
+      "ny_dow_open": 46488.0,
+      "ny_dow_close": 46460.0,
+      "nikkei225_open": 53076.0,
+      "nikkei225_close": 53967.0
+    },
+    {
+      "date": "2026-03-26",
+      "ny_dow_open": 46375.0,
+      "ny_dow_close": 45958.0,
+      "nikkei225_open": 53810.0,
+      "nikkei225_close": 52492.0
+    },
+    {
+      "date": "2026-03-27",
+      "ny_dow_open": 46123.0,
+      "ny_dow_close": 45164.0,
+      "nikkei225_open": 52813.0,
+      "nikkei225_close": 51715.0
+    },
+    {
+      "date": "2026-03-30",
+      "ny_dow_open": 44917.0,
+      "ny_dow_close": 45244.0,
+      "nikkei225_open": 50846.0,
+      "nikkei225_close": 51139.0
+    },
+    {
+      "date": "2026-03-31",
+      "ny_dow_open": 45170.0,
+      "ny_dow_close": 46366.0,
+      "nikkei225_open": 51026.0,
+      "nikkei225_close": 53045.0
+    },
+    {
+      "date": "2026-04-01",
+      "ny_dow_open": 46345.0,
+      "ny_dow_close": 46574.0,
+      "nikkei225_open": 53037.0,
+      "nikkei225_close": 54219.0
+    },
+    {
+      "date": "2026-04-02",
+      "ny_dow_open": 46606.0,
+      "ny_dow_close": 46499.0,
+      "nikkei225_open": 54397.0,
+      "nikkei225_close": 53394.0
+    },
+    {
+      "date": "2026-04-03",
+      "ny_dow_open": 46510.0,
+      "ny_dow_close": 46409.0,
+      "nikkei225_open": 53230.0,
+      "nikkei225_close": 53297.0
+    },
+    {
+      "date": "2026-04-06",
+      "ny_dow_open": 46220.0,
+      "ny_dow_close": 46679.0,
+      "nikkei225_open": 52945.0,
+      "nikkei225_close": 53997.0
+    },
+    {
+      "date": "2026-04-07",
+      "ny_dow_open": 46721.0,
+      "ny_dow_close": 46604.0,
+      "nikkei225_open": 53943.0,
+      "nikkei225_close": 53953.0
+    },
+    {
+      "date": "2026-04-08",
+      "ny_dow_open": 47558.0,
+      "ny_dow_close": 47939.0,
+      "nikkei225_open": 56121.0,
+      "nikkei225_close": 57054.0
+    },
+    {
+      "date": "2026-04-09",
+      "ny_dow_open": 47920.0,
+      "ny_dow_close": 48205.0,
+      "nikkei225_open": 56782.0,
+      "nikkei225_close": 56673.0
+    },
+    {
+      "date": "2026-04-10",
+      "ny_dow_open": 48174.0,
+      "ny_dow_close": 47925.0,
+      "nikkei225_open": 56550.0,
+      "nikkei225_close": 57366.0
+    },
+    {
+      "date": "2026-04-13",
+      "ny_dow_open": 47396.0,
+      "ny_dow_close": 48238.0,
+      "nikkei225_open": 56170.0,
+      "nikkei225_close": 57647.0
+    },
+    {
+      "date": "2026-04-14",
+      "ny_dow_open": 48251.0,
+      "ny_dow_close": 48567.0,
+      "nikkei225_open": 57727.0,
+      "nikkei225_close": 58830.0
+    },
+    {
+      "date": "2026-04-15",
+      "ny_dow_open": 48573.0,
+      "ny_dow_close": 48500.0,
+      "nikkei225_open": 58767.0,
+      "nikkei225_close": 58551.0
+    },
+    {
+      "date": "2026-04-16",
+      "ny_dow_open": 48557.0,
+      "ny_dow_close": 48599.0,
+      "nikkei225_open": 58613.0,
+      "nikkei225_close": 59322.0
+    },
+    {
+      "date": "2026-04-17",
+      "ny_dow_open": 48692.0,
+      "ny_dow_close": 49468.0,
+      "nikkei225_open": 59408.0,
+      "nikkei225_close": 59829.0
+    },
+    {
+      "date": "2026-04-20",
+      "ny_dow_open": 49017.0,
+      "ny_dow_close": 49462.0,
+      "nikkei225_open": 59029.0,
+      "nikkei225_close": 59277.0
+    },
+    {
+      "date": "2026-04-21",
+      "ny_dow_open": 49553.0,
+      "ny_dow_close": 49161.0,
+      "nikkei225_open": 59393.0,
+      "nikkei225_close": 58507.0
+    },
+    {
+      "date": "2026-04-22",
+      "ny_dow_open": 49350.0,
+      "ny_dow_close": 49510.0,
+      "nikkei225_open": 58947.0,
+      "nikkei225_close": 59891.0
+    },
+    {
+      "date": "2026-04-23",
+      "ny_dow_open": 49351.0,
+      "ny_dow_close": 49337.0,
+      "nikkei225_open": 59844.0,
+      "nikkei225_close": 59006.0
+    },
+    {
+      "date": "2026-04-24",
+      "ny_dow_open": 49289.0,
+      "ny_dow_close": 49234.0,
+      "nikkei225_open": 59048.0,
+      "nikkei225_close": 60037.0
+    },
+    {
+      "date": "2026-04-27",
+      "ny_dow_open": 49125.0,
+      "ny_dow_close": 49212.0,
+      "nikkei225_open": 59953.0,
+      "nikkei225_close": 60233.0
+    },
+    {
+      "date": "2026-04-28",
+      "ny_dow_open": 49266.0,
+      "ny_dow_close": 49162.0,
+      "nikkei225_open": 60394.0,
+      "nikkei225_close": 59174.0
+    },
+    {
+      "date": "2026-04-29",
+      "ny_dow_open": 49235.0,
+      "ny_dow_close": 48888.0,
+      "nikkei225_open": 59178.0,
+      "nikkei225_close": 58949.0
+    },
+    {
+      "date": "2026-04-30",
+      "ny_dow_open": 48758.0,
+      "ny_dow_close": 49701.0,
+      "nikkei225_open": 59152.0,
+      "nikkei225_close": 59863.0
+    },
+    {
+      "date": "2026-05-01",
+      "ny_dow_open": 49802.0,
+      "ny_dow_close": 49516.0,
+      "nikkei225_open": 59768.0,
+      "nikkei225_close": 59453.0
+    },
+    {
+      "date": "2026-05-04",
+      "ny_dow_open": 49618.0,
+      "ny_dow_close": 48981.0,
+      "nikkei225_open": 59681.0,
+      "nikkei225_close": 59518.0
+    },
+    {
+      "date": "2026-05-05",
+      "ny_dow_open": 49011.0,
+      "ny_dow_close": 49319.0,
+      "nikkei225_open": 59514.0,
+      "nikkei225_close": 60618.0
+    },
+    {
+      "date": "2026-05-06",
+      "ny_dow_open": 49417.0,
+      "ny_dow_close": 49923.0,
+      "nikkei225_open": 61191.0,
+      "nikkei225_close": 62090.0
+    },
+    {
+      "date": "2026-05-07",
+      "ny_dow_open": 49909.0,
+      "ny_dow_close": 49619.0,
+      "nikkei225_open": 61891.0,
+      "nikkei225_close": 62240.0
+    },
+    {
+      "date": "2026-05-08",
+      "ny_dow_open": 49582.0,
+      "ny_dow_close": 49630.0,
+      "nikkei225_open": 62272.0,
+      "nikkei225_close": 63685.0
+    },
+    {
+      "date": "2026-05-11",
+      "ny_dow_open": 49506.0,
+      "ny_dow_close": 49731.0,
+      "nikkei225_open": 63711.0,
+      "nikkei225_close": 62980.0
+    },
+    {
+      "date": "2026-05-12",
+      "ny_dow_open": 49747.0,
+      "ny_dow_close": 49776.0,
+      "nikkei225_open": 62971.0,
+      "nikkei225_close": 62541.0
+    },
+    {
+      "date": "2026-05-13",
+      "ny_dow_open": 49767.0,
+      "ny_dow_close": 49717.0,
+      "nikkei225_open": 62525.0,
+      "nikkei225_close": 63444.0
+    },
+    {
+      "date": "2026-05-14",
+      "ny_dow_open": 49844.0,
+      "ny_dow_close": 50092.0,
+      "nikkei225_open": 63589.0,
+      "nikkei225_close": 63094.0
+    },
+    {
+      "date": "2026-05-15",
+      "ny_dow_open": 50059.0,
+      "ny_dow_close": 49537.0,
+      "nikkei225_open": 63104.0,
+      "nikkei225_close": 61878.0
+    },
+    {
+      "date": "2026-05-18",
+      "ny_dow_open": 49402.0,
+      "ny_dow_close": 49721.0,
+      "nikkei225_open": 61569.0,
+      "nikkei225_close": 61607.0
+    },
+    {
+      "date": "2026-05-19",
+      "ny_dow_open": 49730.0,
+      "ny_dow_close": 49382.0,
+      "nikkei225_open": 61677.0,
+      "nikkei225_close": 60753.0
+    },
+    {
+      "date": "2026-05-20",
+      "ny_dow_open": 49434.0,
+      "ny_dow_close": 50033.0,
+      "nikkei225_open": 60779.0,
+      "nikkei225_close": 61582.0
+    },
+    {
+      "date": "2026-05-21",
+      "ny_dow_open": 49914.0,
+      "ny_dow_close": 50305.0,
+      "nikkei225_open": 61252.0,
+      "nikkei225_close": 62235.0
+    },
+    {
+      "date": "2026-05-22",
+      "ny_dow_open": 50369.0,
+      "ny_dow_close": 50626.0,
+      "nikkei225_open": 62162.0,
+      "nikkei225_close": 63374.0
+    },
+    {
+      "date": "2026-05-25",
+      "ny_dow_open": 50877.0,
+      "ny_dow_close": 51087.0,
+      "nikkei225_open": 64172.0,
+      "nikkei225_close": 65536.0
+    },
+    {
+      "date": "2026-05-26",
+      "ny_dow_open": 50971.0,
+      "ny_dow_close": 50495.0,
+      "nikkei225_open": 65354.0,
+      "nikkei225_close": 65676.0
+    },
+    {
+      "date": "2026-05-27",
+      "ny_dow_open": 50526.0,
+      "ny_dow_close": 50685.0,
+      "nikkei225_open": 65695.0,
+      "nikkei225_close": 65264.0
+    },
+    {
+      "date": "2026-05-28",
+      "ny_dow_open": 50735.0,
+      "ny_dow_close": 50700.0,
+      "nikkei225_open": 65131.0,
+      "nikkei225_close": 65807.0
+    },
+    {
+      "date": "2026-05-29",
+      "ny_dow_open": 50726.0,
+      "ny_dow_close": 51044.0,
+      "nikkei225_open": 65916.0,
+      "nikkei225_close": 66275.0
+    },
+    {
+      "date": "2026-06-01",
+      "ny_dow_open": 51049.0,
+      "ny_dow_close": 51077.0,
+      "nikkei225_open": 66524.0,
+      "nikkei225_close": 67377.0
+    },
+    {
+      "date": "2026-06-02",
+      "ny_dow_open": 50949.0,
+      "ny_dow_close": 51335.0,
+      "nikkei225_open": 67277.0,
+      "nikkei225_close": 67628.0
+    },
+    {
+      "date": "2026-06-03",
+      "ny_dow_open": 51287.0,
+      "ny_dow_close": 50738.0,
+      "nikkei225_open": 67115.0,
+      "nikkei225_close": 68350.0
+    },
+    {
+      "date": "2026-06-04",
+      "ny_dow_open": 50775.0,
+      "ny_dow_close": 51605.0,
+      "nikkei225_open": 67402.0,
+      "nikkei225_close": 67878.0
+    },
+    {
+      "date": "2026-06-05",
+      "ny_dow_open": 51607.0,
+      "ny_dow_close": 50893.0,
+      "nikkei225_open": 67627.0,
+      "nikkei225_close": 64154.0
+    },
+    {
+      "date": "2026-06-08",
+      "ny_dow_open": 50754.0,
+      "ny_dow_close": 50823.0,
+      "nikkei225_open": 63985.0,
+      "nikkei225_close": 65737.0
+    },
+    {
+      "date": "2026-06-09",
+      "ny_dow_open": 50801.0,
+      "ny_dow_close": 50897.0,
+      "nikkei225_open": 65688.0,
+      "nikkei225_close": 64688.0
+    },
+    {
+      "date": "2026-06-10",
+      "ny_dow_open": 50725.0,
+      "ny_dow_close": 49963.0,
+      "nikkei225_open": 64299.0,
+      "nikkei225_close": 63467.0
+    },
+    {
+      "date": "2026-06-11",
+      "ny_dow_open": 49897.0,
+      "ny_dow_close": 50882.0,
+      "nikkei225_open": 63189.0,
+      "nikkei225_close": 66359.0
+    },
+    {
+      "date": "2026-06-12",
+      "ny_dow_open": 50932.0,
+      "ny_dow_close": 51235.0,
+      "nikkei225_open": 66563.0,
+      "nikkei225_close": 67252.0
+    },
+    {
+      "date": "2026-06-15",
+      "ny_dow_open": 51493.0,
+      "ny_dow_close": 51741.0,
+      "nikkei225_open": 68325.0,
+      "nikkei225_close": 69781.0
+    },
+    {
+      "date": "2026-06-16",
+      "ny_dow_open": 51735.0,
+      "ny_dow_close": 52071.0,
+      "nikkei225_open": 69583.0,
+      "nikkei225_close": 69147.0
+    },
+    {
+      "date": "2026-06-17",
+      "ny_dow_open": 52117.0,
+      "ny_dow_close": 51538.0,
+      "nikkei225_open": 69107.0,
+      "nikkei225_close": 69916.0
+    },
+    {
+      "date": "2026-06-18",
+      "ny_dow_open": 51762.0,
+      "ny_dow_close": 51595.0,
+      "nikkei225_open": 70833.0,
+      "nikkei225_close": 72040.0
+    },
+    {
+      "date": "2026-06-19",
+      "ny_dow_open": 51618.0,
+      "ny_dow_close": 51487.0,
+      "nikkei225_open": 71971.0,
+      "nikkei225_close": 71910.0
+    },
+    {
+      "date": "2026-06-22",
+      "ny_dow_open": 51425.0,
+      "ny_dow_close": 51739.0,
+      "nikkei225_open": 71678.0,
+      "nikkei225_close": 73128.0
+    },
+    {
+      "date": "2026-06-23",
+      "ny_dow_open": 51752.0,
+      "ny_dow_close": 51705.0,
+      "nikkei225_open": 73007.0,
+      "nikkei225_close": 69186.0
+    },
+    {
+      "date": "2026-06-24",
+      "ny_dow_open": 51681.0,
+      "ny_dow_close": 51919.0,
+      "nikkei225_open": 69375.0,
+      "nikkei225_close": 69455.0
+    },
+    {
+      "date": "2026-06-25",
+      "ny_dow_open": 51955.0,
+      "ny_dow_close": 51972.0,
+      "nikkei225_open": 71413.0,
+      "nikkei225_close": 71249.0
+    },
+    {
+      "date": "2026-06-26",
+      "ny_dow_open": 52134.0,
+      "ny_dow_close": 51813.0,
+      "nikkei225_open": 71629.0,
+      "nikkei225_close": 69680.0
+    },
+    {
+      "date": "2026-06-29",
+      "ny_dow_open": 52039.0,
+      "ny_dow_close": 52233.0,
+      "nikkei225_open": 70133.0,
+      "nikkei225_close": 70812.0
+    },
+    {
+      "date": "2026-06-30",
+      "ny_dow_open": 52179.0,
+      "ny_dow_close": 52312.0,
+      "nikkei225_open": 70550.0,
+      "nikkei225_close": 71225.0
+    },
+    {
+      "date": "2026-07-01",
+      "ny_dow_open": 52211.0,
+      "ny_dow_close": 52313.0,
+      "nikkei225_open": 71040.0,
+      "nikkei225_close": 69666.0
+    },
+    {
+      "date": "2026-07-02",
+      "ny_dow_open": 52280.0,
+      "ny_dow_close": 52838.0,
+      "nikkei225_open": 69684.0,
+      "nikkei225_close": 68341.0
+    },
+    {
+      "date": "2026-07-03",
+      "ny_dow_open": 52872.0,
+      "ny_dow_close": 52849.0,
+      "nikkei225_open": 68650.0,
+      "nikkei225_close": 69682.0
+    },
+    {
+      "date": "2026-07-06",
+      "ny_dow_open": 52887.0,
+      "ny_dow_close": 53065.0,
+      "nikkei225_open": 69957.0,
+      "nikkei225_close": 70250.0
+    },
+    {
+      "date": "2026-07-07",
+      "ny_dow_open": 53115.0,
+      "ny_dow_close": 52917.0,
+      "nikkei225_open": 70241.0,
+      "nikkei225_close": 67774.0
+    },
+    {
+      "date": "2026-07-08",
+      "ny_dow_open": 52912.0,
+      "ny_dow_close": 52352.0,
+      "nikkei225_open": 67641.0,
+      "nikkei225_close": 67812.0
+    },
+    {
+      "date": "2026-07-09",
+      "ny_dow_open": 52335.0,
+      "ny_dow_close": 52520.0,
+      "nikkei225_open": 67781.0,
+      "nikkei225_close": 69024.0
+    },
+    {
+      "date": "2026-07-10",
+      "ny_dow_open": 52536.0,
+      "ny_dow_close": 52646.0,
+      "nikkei225_open": 69017.0,
+      "nikkei225_close": 69242.0
+    },
+    {
+      "date": "2026-07-13",
+      "ny_dow_open": 52560.0,
+      "ny_dow_close": 52515.0,
+      "nikkei225_open": 68930.0,
+      "nikkei225_close": 67383.0
+    },
+    {
+      "date": "2026-07-14",
+      "ny_dow_open": 52432.0,
+      "ny_dow_close": 52544.0,
+      "nikkei225_open": 66978.0,
+      "nikkei225_close": 68191.0
+    },
+    {
+      "date": "2026-07-15",
+      "ny_dow_open": 52610.0,
+      "ny_dow_close": 52680.0,
+      "nikkei225_open": 68363.0,
+      "nikkei225_close": 67805.0
+    },
+    {
+      "date": "2026-07-16",
+      "ny_dow_open": 52723.0,
+      "ny_dow_close": 52556.0,
+      "nikkei225_open": 67889.0,
+      "nikkei225_close": 66056.0
+    },
+    {
+      "date": "2026-07-17",
+      "ny_dow_open": 52496.0,
+      "ny_dow_close": 52137.0,
+      "nikkei225_open": 65800.0,
+      "nikkei225_close": 65160.0
+    },
+    {
+      "date": "2026-07-20",
+      "ny_dow_open": 52107.0,
+      "ny_dow_close": 51869.0,
+      "nikkei225_open": 64859.0,
+      "nikkei225_close": 65109.0
+    },
+    {
+      "date": "2026-07-21",
+      "ny_dow_open": 51929.0,
+      "ny_dow_close": 52237.0,
+      "nikkei225_open": 65182.0,
+      "nikkei225_close": 67248.0
+    },
+    {
+      "date": "2026-07-22",
+      "ny_dow_open": 52229.0,
+      "ny_dow_close": 52245.0,
+      "nikkei225_open": 67097.0,
+      "nikkei225_close": 66444.0
+    },
+    {
+      "date": "2026-07-23",
+      "ny_dow_open": 52195.0,
+      "ny_dow_close": 51727.0,
+      "nikkei225_open": 66290.0,
+      "nikkei225_close": 65418.0
+    },
+    {
+      "date": "2026-07-24",
+      "ny_dow_open": 51713.0,
+      "ny_dow_close": 51950.0,
+      "nikkei225_open": 65543.0,
+      "nikkei225_close": 64431.0
+    },
+    {
+      "date": "2026-07-27",
+      "ny_dow_open": 52210.0,
+      "ny_dow_close": 52216.0,
+      "nikkei225_open": 65488.0,
+      "nikkei225_close": 64061.0
+    },
+    {
+      "date": "2026-07-28",
+      "ny_dow_open": 52263.0,
+      "ny_dow_close": 52774.0,
+      "nikkei225_open": 63981.0,
+      "nikkei225_close": 62526.0
+    },
+    {
+      "date": "2026-07-29",
+      "ny_dow_open": 52765.0,
+      "ny_dow_close": 51606.0,
+      "nikkei225_open": 62305.0,
+      "nikkei225_close": 61400.0
+    },
+    {
+      "date": "2026-07-30",
+      "ny_dow_open": 51772.0,
+      "ny_dow_close": 52250.0,
+      "nikkei225_open": 61693.0,
+      "nikkei225_close": 63771.0
+    },
+    {
+      "date": "2026-07-31",
+      "ny_dow_open": 52336.0,
+      "ny_dow_close": 52477.0,
+      "nikkei225_open": 63837.0,
+      "nikkei225_close": 63298.0
+    },
+    {
+      "date": "2026-08-03",
+      "ny_dow_open": 52669.0,
+      "ny_dow_close": 53210.0,
+      "nikkei225_open": 63726.0,
+      "nikkei225_close": 63426.0
+    },
+    {
+      "date": "2026-08-04",
+      "ny_dow_open": 53285.0,
+      "ny_dow_close": 54115.0,
+      "nikkei225_open": 63600.0,
+      "nikkei225_close": 65478.0
+    },
+    {
+      "date": "2026-08-05",
+      "ny_dow_open": 54242.0,
+      "ny_dow_close": 54348.0,
+      "nikkei225_open": 65718.0,
+      "nikkei225_close": 65744.0
+    },
+    {
+      "date": "2026-08-06",
+      "ny_dow_open": 54493.0,
+      "ny_dow_close": 53899.0,
+      "nikkei225_open": 65877.0,
+      "nikkei225_close": 65627.0
+    },
+    {
+      "date": "2026-08-07",
+      "ny_dow_open": 53885.0,
+      "ny_dow_close": 54028.0,
+      "nikkei225_open": 65665.0,
+      "nikkei225_close": 66336.0
+    },
+    {
+      "date": "2026-08-10",
+      "ny_dow_open": 53934.0,
+      "ny_dow_close": 53963.0,
+      "nikkei225_open": 66358.0,
+      "nikkei225_close": 66772.0
+    },
+    {
+      "date": "2026-08-11",
+      "ny_dow_open": 53899.0,
+      "ny_dow_close": 53787.0,
+      "nikkei225_open": 66694.0,
+      "nikkei225_close": 67132.0
+    },
+    {
+      "date": "2026-08-12",
+      "ny_dow_open": 53805.0,
+      "ny_dow_close": 53777.0,
+      "nikkei225_open": 67185.0,
+      "nikkei225_close": 68563.0
+    },
+    {
+      "date": "2026-08-13",
+      "ny_dow_open": 53829.0,
+      "ny_dow_close": 53859.0,
+      "nikkei225_open": 68588.0,
+      "nikkei225_close": 69203.0
+    },
+    {
+      "date": "2026-08-14",
+      "ny_dow_open": 53882.0,
+      "ny_dow_close": 53739.0,
+      "nikkei225_open": 69277.0,
+      "nikkei225_close": 68745.0
+    },
+    {
+      "date": "2026-08-17",
+      "ny_dow_open": 53748.0,
+      "ny_dow_close": 53483.0,
+      "nikkei225_open": 68902.0,
+      "nikkei225_close": 69101.0
+    },
+    {
+      "date": "2026-08-18",
+      "ny_dow_open": 53457.0,
+      "ny_dow_close": 53348.0,
+      "nikkei225_open": 69013.0,
+      "nikkei225_close": 66323.0
+    },
+    {
+      "date": "2026-08-19",
+      "ny_dow_open": 53336.0,
+      "ny_dow_close": 53470.0,
+      "nikkei225_open": 66122.0,
+      "nikkei225_close": 66014.0
+    },
+    {
+      "date": "2026-08-20",
+      "ny_dow_open": 53528.0,
+      "ny_dow_close": 52790.0,
+      "nikkei225_open": 66536.0,
+      "nikkei225_close": 65619.0
+    },
+    {
+      "date": "2026-08-21",
+      "ny_dow_open": 52814.0,
+      "ny_dow_close": 53271.0,
+      "nikkei225_open": 65596.0,
+      "nikkei225_close": 65968.0
+    },
+    {
+      "date": "2026-08-24",
+      "ny_dow_open": 53276.0,
+      "ny_dow_close": 53429.0,
+      "nikkei225_open": 66127.0,
+      "nikkei225_close": 65409.0
+    },
+    {
+      "date": "2026-08-25",
+      "ny_dow_open": 53436.0,
+      "ny_dow_close": 53580.0,
+      "nikkei225_open": 65420.0,
+      "nikkei225_close": 66120.0
+    },
+    {
+      "date": "2026-08-26",
+      "ny_dow_open": 53571.0,
+      "ny_dow_close": 53455.0,
+      "nikkei225_open": 66020.0,
+      "nikkei225_close": 66032.0
+    },
+    {
+      "date": "2026-08-27",
+      "ny_dow_open": 53728.0,
+      "ny_dow_close": 53581.0,
+      "nikkei225_open": 67032.0,
+      "nikkei225_close": 66280.0
+    },
+    {
+      "date": "2026-08-28",
+      "ny_dow_open": 53540.0,
+      "ny_dow_close": 53548.0,
+      "nikkei225_open": 66105.0,
+      "nikkei225_close": 65788.0
+    },
+    {
+      "date": "2026-08-31",
+      "ny_dow_open": 53473.0,
+      "ny_dow_close": 53217.0,
+      "nikkei225_open": 65492.0,
+      "nikkei225_close": 65945.0
+    },
+    {
+      "date": "2026-09-01",
+      "ny_dow_open": 53231.0,
+      "ny_dow_close": 52770.0,
+      "nikkei225_open": 65918.0,
+      "nikkei225_close": 64905.0
+    },
+    {
+      "date": "2026-09-02",
+      "ny_dow_open": 52788.0,
+      "ny_dow_close": 53094.0,
+      "nikkei225_open": 64843.0,
+      "nikkei225_close": 64744.0
+    },
+    {
+      "date": "2026-09-03",
+      "ny_dow_open": 53108.0,
+      "ny_dow_close": 53692.0,
+      "nikkei225_open": 64586.0,
+      "nikkei225_close": 64561.0
+    },
+    {
+      "date": "2026-09-04",
+      "ny_dow_open": 53694.0,
+      "ny_dow_close": 53377.0,
+      "nikkei225_open": 64663.0,
+      "nikkei225_close": 65849.0
+    },
+    {
+      "date": "2026-09-07",
+      "ny_dow_open": 53276.0,
+      "ny_dow_close": 53087.0,
+      "nikkei225_open": 66002.0,
+      "nikkei225_close": 66111.0
+    },
+    {
+      "date": "2026-09-08",
+      "ny_dow_open": 53077.0,
+      "ny_dow_close": 52808.0,
+      "nikkei225_open": 66011.0,
+      "nikkei225_close": 65185.0
+    },
+    {
+      "date": "2026-09-09",
+      "ny_dow_open": 52802.0,
+      "ny_dow_close": 52419.0,
+      "nikkei225_open": 65065.0,
+      "nikkei225_close": 64203.0
+    },
+    {
+      "date": "2026-09-10",
+      "ny_dow_open": 52484.0,
+      "ny_dow_close": 52082.0,
+      "nikkei225_open": 64483.0,
+      "nikkei225_close": 64056.0
+    },
+    {
+      "date": "2026-09-11",
+      "ny_dow_open": 52094.0,
+      "ny_dow_close": 52577.0,
+      "nikkei225_open": 63990.0,
+      "nikkei225_close": 64735.0
+    },
+    {
+      "date": "2026-09-14",
+      "ny_dow_open": 52448.0,
+      "ny_dow_close": 52437.0,
+      "nikkei225_open": 63508.0,
+      "nikkei225_close": 63315.0
+    },
+    {
+      "date": "2026-09-15",
+      "ny_dow_open": 52444.0,
+      "ny_dow_close": 52121.0,
+      "nikkei225_open": 63332.0,
+      "nikkei225_close": 63600.0
+    },
+    {
+      "date": "2026-09-16",
+      "ny_dow_open": 52165.0,
+      "ny_dow_close": 51497.0,
+      "nikkei225_open": 63686.0,
+      "nikkei225_close": 64286.0
+    },
+    {
+      "date": "2026-09-17",
+      "ny_dow_open": 51649.0,
+      "ny_dow_close": 51824.0,
+      "nikkei225_open": 64544.0,
+      "nikkei225_close": 65036.0
+    },
+    {
+      "date": "2026-09-18",
+      "ny_dow_open": 51781.0,
+      "ny_dow_close": 51672.0,
+      "nikkei225_open": 64980.0,
+      "nikkei225_close": 65168.0
+    },
+    {
+      "date": "2026-09-21",
+      "ny_dow_open": 51799.0,
+      "ny_dow_close": 52118.0,
+      "nikkei225_open": 65411.0,
+      "nikkei225_close": 66601.0
+    },
+    {
+      "date": "2026-09-22",
+      "ny_dow_open": 52083.0,
+      "ny_dow_close": 51894.0,
+      "nikkei225_open": 66563.0,
+      "nikkei225_close": 67169.0
+    },
+    {
+      "date": "2026-09-23",
+      "ny_dow_open": 51893.0,
+      "ny_dow_close": 51492.0,
+      "nikkei225_open": 67136.0,
+      "nikkei225_close": 66145.0
+    },
+    {
+      "date": "2026-09-24",
+      "ny_dow_open": 51491.0,
+      "ny_dow_close": 51347.0,
+      "nikkei225_open": 66140.0,
+      "nikkei225_close": 65872.0
+    },
+    {
+      "date": "2026-09-25",
+      "ny_dow_open": 51295.0,
+      "ny_dow_close": 51806.0,
+      "nikkei225_open": 65741.0,
+      "nikkei225_close": 66656.0
+    },
+    {
+      "date": "2026-09-28",
+      "ny_dow_open": 51640.0,
+      "ny_dow_close": 51462.0,
+      "nikkei225_open": 66404.0,
+      "nikkei225_close": 65995.0
+    },
+    {
+      "date": "2026-09-29",
+      "ny_dow_open": 51533.0,
+      "ny_dow_close": 51378.0,
+      "nikkei225_open": 65645.0,
+      "nikkei225_close": 66134.0
+    },
+    {
+      "date": "2026-09-30",
+      "ny_dow_open": 51463.0,
+      "ny_dow_close": 50950.0,
+      "nikkei225_open": 66149.0,
+      "nikkei225_close": 66963.0
+    },
+    {
+      "date": "2026-10-01",
+      "ny_dow_open": 51090.0,
+      "ny_dow_close": 50930.0,
+      "nikkei225_open": 67126.0,
+      "nikkei225_close": 68357.0
+    },
+    {
+      "date": "2026-10-02",
+      "ny_dow_open": 50975.0,
+      "ny_dow_close": 51161.0,
+      "nikkei225_open": 68332.0,
+      "nikkei225_close": 69763.0
+    }
+  ],
+  "latest": {
+    "date": "2026-10-02",
+    "ny_dow_open": 50975.0,
+    "ny_dow_close": 51161.0,
+    "nikkei225_open": 68332.0,
+    "nikkei225_close": 69763.0,
+    "spread": -18602.0,
+    "change": -1175.0,
+    "ma20": -13914.4,
+    "ma50": -12977.5,
+    "spread_10d_change": -5106.0,
+    "pullback_move": 0.0,
+    "signal_b": false,
+    "signal_c2": false,
+    "signal_state": "NO SIGNAL"
+  },
+  "data_date": "2026-10-02",
+  "products": {
+    "nikkei225": {
+      "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+      "code": "N26/JPY",
+      "form_name": "HistoricalCfdData[product_type1][]",
+      "year": 2026
+    },
+    "ny_dow": {
+      "name": "NYダウ リセット付証拠金取引（DJIA）2026",
+      "code": "D26/JPY",
+      "form_name": "HistoricalCfdData[product_type1][]",
+      "year": 2026
+    }
+  },
+  "available_products": [
+    "日経 225 リセット付証拠金取引（Nikkei 225）2027",
+    "NYダウ リセット付証拠金取引（DJIA）2027",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+    "NYダウ リセット付証拠金取引（DJIA）2026",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2025",
+    "NYダウ リセット付証拠金取引（DJIA）2025",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2024",
+    "NYダウ リセット付証拠金取引（DJIA）2024",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2023",
+    "NYダウ リセット付証拠金取引（DJIA）2023",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2022",
+    "NYダウ リセット付証拠金取引（DJIA）2022",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2021",
+    "NYダウ リセット付証拠金取引（DJIA）2021"
+  ],
+  "verified_lifecycle": {
+    "nikkei225": {
+      "start": "2025-09-15",
+      "last_trade": "2026-12-10",
+      "reset": "2026-12-11"
+    },
+    "ny_dow": {
+      "start": "2025-09-15",
+      "last_trade": "2026-12-17",
+      "reset": "2026-12-21"
+    }
+  },
+  "sources": [
+    {
+      "date": "2026-10-02",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261002.CSV",
+      "sha256": "afe829ebb076cf4e40ca6126a7998047a3dd07cdce745570f5cb1b519f35091e"
+    }
+  ],
+  "last_success_at": "2026-10-04T17:14:46+09:00",
+  "frozen_parameters": {
+    "N": 5,
+    "MINIMUM_MOVE": 500,
+    "SHORT_MA": 20,
+    "LONG_MA": 50,
+    "PULLBACK_MINIMUM_MOVE": 500,
+    "TAKE_PROFIT_SPREAD": 1000,
+    "STOP_LOSS_SPREAD": 2000,
+    "MAX_HOLDING_DAYS": 30
+  },
+  "positions": {
+    "B": {
+      "kind": "OOS_SIMULATED_NOT_ACTUAL",
+      "position": null,
+      "pending_entry_signal_date": null,
+      "pending_exit": null,
+      "entry_candidate": false,
+      "closed_trades": []
+    },
+    "C2": {
+      "kind": "OOS_SIMULATED_NOT_ACTUAL",
+      "position": null,
+      "pending_entry_signal_date": null,
+      "pending_exit": null,
+      "entry_candidate": false,
+      "closed_trades": []
+    }
+  }
+}

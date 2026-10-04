@@ -1,0 +1,25 @@
+{
+  "last_attempt_at": "2026-10-04T17:13:19+09:00",
+  "schedule_time_jst": "10:30",
+  "error": "公式の取引開始・最終日を確認できません: nikkei225",
+  "update_status": "DATA UPDATE ERROR",
+  "stale_attempt_hours": 36,
+  "added_dates": [],
+  "latest": {
+    "date": "2026-10-02",
+    "ny_dow_open": 50975.0,
+    "ny_dow_close": 51161.0,
+    "nikkei225_open": 68332.0,
+    "nikkei225_close": 69763.0,
+    "spread": -18602.0,
+    "change": -1175.0,
+    "ma20": -13914.4,
+    "ma50": -12977.5,
+    "spread_10d_change": -5106.0,
+    "pullback_move": 0.0,
+    "signal_b": false,
+    "signal_c2": false,
+    "signal_state": "NO SIGNAL"
+  },
+  "data_date": "2026-10-02"
+}

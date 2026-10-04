@@ -1,0 +1,52 @@
+{
+  "frozen_at_local": "2026-10-04T08:36:58.979394",
+  "oos_start": "2026-10-03",
+  "research_end": "2026-10-02",
+  "strategies": {
+    "B": "Phase 3 contraction only",
+    "C2": "B AND signal-close spread.diff(10)<0"
+  },
+  "parameters": {
+    "N": 5,
+    "MINIMUM_MOVE": 500,
+    "SHORT_MA": 20,
+    "LONG_MA": 50,
+    "PULLBACK_MINIMUM_MOVE": 500,
+    "TAKE_PROFIT_SPREAD": 1000,
+    "STOP_LOSS_SPREAD": 2000,
+    "MAX_HOLDING_DAYS": 30,
+    "DOW_MULTIPLIER_JPY": 10,
+    "NIKKEI_MULTIPLIER_JPY": 100,
+    "DOW_FEE_PER_SIDE_JPY": null,
+    "NIKKEI_FEE_PER_SIDE_JPY": null,
+    "DOW_MARGIN_JPY": null,
+    "NIKKEI_MARGIN_JPY": null
+  },
+  "products": {
+    "nikkei225": {
+      "japanese_name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+      "english_name": "Nikkei 225 Daily Futures contract with Reset Date2026"
+    },
+    "ny_dow": {
+      "japanese_name": "NYダウ リセット付証拠金取引（DJIA）2026",
+      "english_name": "DJIA Daily Futures contract with Reset Date2026"
+    }
+  },
+  "spread": "NY_DOW - NIKKEI225",
+  "signal_timing": "close",
+  "execution": "next common valid session open",
+  "startup": "flat; pre-cutoff data for indicators only; pre-cutoff signals blocked",
+  "ongoing_positions": "not closed at update boundary; terminal mark is unrealized only",
+  "reset_policy": "only frozen 2026 products; no automatic rollover or substitution",
+  "optimization": false,
+  "files_sha256": {
+    "phase2_config.py": "3f22e1e833bda42cd798ec5d9abffe9533e11dd41a8b57e6fa25ea94bd929bae",
+    "src/phase2.py": "e5af6a1f2d26f34179adeb3fce22f3e27dadc478e9d023396917ee3a9c39f8a7",
+    "run_phase3.py": "3e9a87dc40174f30e244552188b297114e07c1d2e8f0016e02c2723c79465d55",
+    "src/candidate_c.py": "27b4de8872af240a364dd8a71f53db4dcf459911d4fdcbc716d79a58b6b55587",
+    "run_oos_b_vs_c2.py": "461306a33d0ddb99327826cc50a9023604669a6aaa715c59c1ff55c164f86a67",
+    "data/validation_2024_2026/prices_2026.csv": "397154f89a6a3a844fa047326797bbb7edbb775e89e110f96541749ef12de02b",
+    "data/validation_2024_2026/source_2026.json": "85ead72c5e2eb1343d3226d669e11666fe39242df0f7bf6756ac676ce4f4ad4d",
+    "data/validation_2024_2026/tfx_2026_original.csv": "41b17f7e5e60a14b768b08afbdac2316d4557cca53e57f35fa2393099f0f2a39"
+  }
+}

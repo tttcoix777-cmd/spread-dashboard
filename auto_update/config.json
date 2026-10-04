@@ -1,0 +1,15 @@
+{
+  "product_year": 2026,
+  "source_page": "https://www.tfx.co.jp/historical/cfd/",
+  "product_schedule_source": "https://www.clickkabu365.jp/newsfile/article/20250815-10",
+  "verified_lifecycle": {
+    "nikkei225": {"start": "2025-09-15", "last_trade": "2026-12-10", "reset": "2026-12-11"},
+    "ny_dow": {"start": "2025-09-15", "last_trade": "2026-12-17", "reset": "2026-12-21"}
+  },
+  "anomaly_max_leg_change_ratio": 0.20,
+  "max_source_age_calendar_days": 4,
+  "stale_attempt_hours": 36,
+  "update_time_jst": "10:30",
+  "rollover": "STOP_AND_WARN_DO_NOT_SWITCH",
+  "note": "20%はデータ品質の警告基準で、戦略の条件・最適化ではありません。超えた日は自動補完せず更新を拒否します。"
+}
