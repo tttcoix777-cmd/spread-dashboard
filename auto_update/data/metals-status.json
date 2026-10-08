@@ -1,5 +1,5 @@
 {
-  "last_attempt_at": "2026-10-08T11:33:06+09:00",
+  "last_attempt_at": "2026-10-08T11:33:39+09:00",
   "error": "",
   "update_status": "NO_NEW_DATA",
   "added_dates": [],
@@ -12,11 +12,12 @@
     "v3": 0,
     "change": 400.9000000000051
   },
-  "last_success_at": "2026-10-08T11:33:06+09:00",
+  "last_success_at": "2026-10-08T11:33:39+09:00",
   "sources": [
     {
       "date": "2026-10-07",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261007.CSV",
+      "origin": "TFX official daily CSV",
       "sha256": "7114237dc4a5b8f5bf19f8de5e5b30de13024171b5749461aaaf11bd0e45a4ca"
     }
   ],
