@@ -1,0 +1,103 @@
+{
+  "last_attempt_at": "2026-10-08T11:31:30+09:00",
+  "schedule_time_jst": "10:30",
+  "error": "",
+  "update_status": "NO_NEW_DATA",
+  "stale_attempt_hours": 36,
+  "added_dates": [],
+  "latest": {
+    "date": "2026-10-07",
+    "ny_dow_open": 51546.0,
+    "ny_dow_close": 51152.0,
+    "nikkei225_open": 70792.0,
+    "nikkei225_close": 69698.0,
+    "spread": -18546.0,
+    "change": 656.0,
+    "ma20": -14878.65,
+    "ma50": -13479.08,
+    "spread_10d_change": -3893.0,
+    "pullback_move": 0.0,
+    "signal_b": false,
+    "signal_c2": false,
+    "signal_state": "NO SIGNAL"
+  },
+  "data_date": "2026-10-07",
+  "products": {
+    "nikkei225": {
+      "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+      "code": "N26/JPY",
+      "form_name": "HistoricalCfdData[product_type1][]",
+      "year": 2026
+    },
+    "ny_dow": {
+      "name": "NYダウ リセット付証拠金取引（DJIA）2026",
+      "code": "D26/JPY",
+      "form_name": "HistoricalCfdData[product_type1][]",
+      "year": 2026
+    }
+  },
+  "available_products": [
+    "日経 225 リセット付証拠金取引（Nikkei 225）2027",
+    "NYダウ リセット付証拠金取引（DJIA）2027",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+    "NYダウ リセット付証拠金取引（DJIA）2026",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2025",
+    "NYダウ リセット付証拠金取引（DJIA）2025",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2024",
+    "NYダウ リセット付証拠金取引（DJIA）2024",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2023",
+    "NYダウ リセット付証拠金取引（DJIA）2023",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2022",
+    "NYダウ リセット付証拠金取引（DJIA）2022",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2021",
+    "NYダウ リセット付証拠金取引（DJIA）2021"
+  ],
+  "verified_lifecycle": {
+    "nikkei225": {
+      "start": "2025-09-15",
+      "last_trade": "2026-12-10",
+      "reset": "2026-12-11"
+    },
+    "ny_dow": {
+      "start": "2025-09-15",
+      "last_trade": "2026-12-17",
+      "reset": "2026-12-21"
+    }
+  },
+  "sources": [
+    {
+      "date": "2026-10-07",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261007.CSV",
+      "sha256": "7114237dc4a5b8f5bf19f8de5e5b30de13024171b5749461aaaf11bd0e45a4ca"
+    }
+  ],
+  "last_success_at": "2026-10-08T11:31:30+09:00",
+  "frozen_parameters": {
+    "N": 5,
+    "MINIMUM_MOVE": 500,
+    "SHORT_MA": 20,
+    "LONG_MA": 50,
+    "PULLBACK_MINIMUM_MOVE": 500,
+    "TAKE_PROFIT_SPREAD": 1000,
+    "STOP_LOSS_SPREAD": 2000,
+    "MAX_HOLDING_DAYS": 30
+  },
+  "positions": {
+    "B": {
+      "kind": "OOS_SIMULATED_NOT_ACTUAL",
+      "position": null,
+      "pending_entry_signal_date": null,
+      "pending_exit": null,
+      "entry_candidate": false,
+      "closed_trades": []
+    },
+    "C2": {
+      "kind": "OOS_SIMULATED_NOT_ACTUAL",
+      "position": null,
+      "pending_entry_signal_date": null,
+      "pending_exit": null,
+      "entry_candidate": false,
+      "closed_trades": []
+    }
+  }
+}
