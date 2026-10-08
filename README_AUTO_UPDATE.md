@@ -1,12 +1,12 @@
-# 日経225−NYダウ 毎日更新ガイド
+# 銀−プラチナ V3 / 日経225−NYダウ C2 毎日更新ガイド
 
 ## 現在の状態
 
-自動取得・計算・保存・画面表示のプログラムと、毎日実行するGitHub Actionsを用意しました。TFX公式への実際の取得を確認し、12項目の検証に合格しています。GitHubリポジトリが未作成のため、定期実行とインターネット公開はまだ有効ではありません。ローカル画面に「確認済み」と出ることは、毎日の運転開始を意味しません。
-
-銀−プラチナの価格ファイル・計算・画面は変更していません。この一式が自動更新するのは日経・ダウだけです。実注文を出す機能や口座接続はありません。
+GitHub ActionsによるTFX公式日足の自動取得・検証・保存が稼働しています。日経225−NYダウ C2と銀−プラチナ固定V3の両方をGitHub Pagesの統合画面で確認できます。銀−プラチナの自動更新は `auto_update/update_metals.py` で実装し、元の `dist/engine.js` の固定V3売買条件は変更していません。実注文を出す機能や口座接続はありません。GitHub Actionsの実行結果と、公開画面の最終更新時刻をそれぞれ確認してください。
 
 ## 自動更新の仕組み
+
+銀−プラチナはTFXのV26/JPY（銀ETF）とP26/JPY（プラチナETF）の2026年リセット商品の確定終値を取得し、同梱済みの固定3:1 V3条件で候補を計算します。TFX上の原本に保存履歴との不一致・欠損・異常変動が見つかった場合、古い日足を新規候補として使わず、エラーを公開します。結果は `dist/silver-platinum.csv` と `dist/silver-platinum-status.json` に保存します。
 
 毎日10:30（日本時間）にGitHub側でプログラムを動かします。TFXの公式履歴ページに記載された商品名・商品コードを確認し、日付別CSVから2026年リセット商品の両脚の始値と終値を取得します。「清算値」は終値として使いません。
 
@@ -36,7 +36,7 @@ Netlify/Cloudflare Pagesを使う場合は、同じリポジトリを接続し�
 
 ## 毎日の動作
 
-公式取得 → 検証 → B/C2計算 → CSV/JSON保存 → ログ保存 → mainへ保存 → GitHub Pagesへ公開、の順に進みます。土日・休場日で新しい取引日がなければ、価格を作らず「新しい取引日なし」と表示します。公式最新日が4暦日以上前なら、長期休場や公表遅延の確認を促して停止します。
+公式取得 → 検証 → 銀−Pt V3・日経ダウ B/C2計算 → CSV/JSON保存 → ログ保存 → mainへ保存 → GitHub Pagesへ公開、の順に進みます。土日・休場日で新しい取引日がなければ、価格を作らず「新しい取引日なし」と表示します。公式最新日が4暦日以上前なら、長期休場や公表遅延の確認を促して停止します。
 
 ブラウザは5分ごと、また画面へ戻ったときに公開JSONを確認します。再読み込みボタンでも確認できます。ページの表示だけではTFXの取得は実行されません。GitHub側の処理が必要です。
 
@@ -58,10 +58,11 @@ PCで動かす場合はPython 3.11以上を用意し、展開したフォルダ�
 
 ```powershell
 python auto_update/update_dow_nikkei.py --site-dir dist
+python auto_update/update_metals.py --site-dir dist
 python -m unittest discover -s auto_update/tests -v
 ```
 
-更新したdata/logsとdistのCSV/JSONをGitHubへCommit・Pushし、Run workflowで再公開してください。処理が途中で止まって `auto_update/data/.update.lock` が残った場合は、他の更新処理が動いていないことを確認してからロックを取り除きます。
+更新したdata/logsとdistの両戦略のCSV/JSONをGitHubへCommit・Pushし、Run workflowで再公開してください。処理が途中で止まって `auto_update/data/.update.lock` が残った場合は、他の更新処理が動いていないことを確認してからロックを取り除きます。
 
 画面のCSV読み込みはその画面だけの手動確認です。自動公開データは変更しません。`date,ny_dow_open,ny_dow_close,nikkei225_open,nikkei225_close` を推奨します。「自動データに戻す」で公開された正常データまたはエラー状態に戻ります。
 
