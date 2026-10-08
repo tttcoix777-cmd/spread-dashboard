@@ -1,11 +1,11 @@
 {
-  "last_attempt_at": "2026-10-07T10:44:49+09:00",
+  "last_attempt_at": "2026-10-08T10:45:10+09:00",
   "schedule_time_jst": "10:30",
   "error": "",
   "update_status": "UPDATED",
   "stale_attempt_hours": 36,
   "added_dates": [
-    "2026-10-06"
+    "2026-10-07"
   ],
   "history": [
     {
@@ -1389,29 +1389,36 @@
     },
     {
       "date": "2026-10-06",
-      "nikkei225_open": 70042.0,
-      "nikkei225_close": 70713.0,
       "ny_dow_open": 51329.0,
-      "ny_dow_close": 51511.0
+      "ny_dow_close": 51511.0,
+      "nikkei225_open": 70042.0,
+      "nikkei225_close": 70713.0
+    },
+    {
+      "date": "2026-10-07",
+      "nikkei225_open": 70792.0,
+      "nikkei225_close": 69698.0,
+      "ny_dow_open": 51546.0,
+      "ny_dow_close": 51152.0
     }
   ],
   "latest": {
-    "date": "2026-10-06",
-    "nikkei225_open": 70042.0,
-    "nikkei225_close": 70713.0,
-    "ny_dow_open": 51329.0,
-    "ny_dow_close": 51511.0,
-    "spread": -19202.0,
-    "change": -480.0,
-    "ma20": -14540.55,
-    "ma50": -13304.04,
-    "spread_10d_change": -3927.0,
+    "date": "2026-10-07",
+    "nikkei225_open": 70792.0,
+    "nikkei225_close": 69698.0,
+    "ny_dow_open": 51546.0,
+    "ny_dow_close": 51152.0,
+    "spread": -18546.0,
+    "change": 656.0,
+    "ma20": -14878.65,
+    "ma50": -13479.08,
+    "spread_10d_change": -3893.0,
     "pullback_move": 0.0,
     "signal_b": false,
     "signal_c2": false,
     "signal_state": "NO SIGNAL"
   },
-  "data_date": "2026-10-06",
+  "data_date": "2026-10-07",
   "products": {
     "nikkei225": {
       "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
@@ -1456,17 +1463,17 @@
   },
   "sources": [
     {
-      "date": "2026-10-05",
-      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261005.CSV",
-      "sha256": "3f1a2c887e11724f3c91dc17b18a5382308fcadc2ff645b386b8a7119d1aa00f"
-    },
-    {
       "date": "2026-10-06",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261006.CSV",
       "sha256": "50364709f5bdaf773cee067d7e7d81e69f8f438c605f37816043494461a3d67b"
+    },
+    {
+      "date": "2026-10-07",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261007.CSV",
+      "sha256": "7114237dc4a5b8f5bf19f8de5e5b30de13024171b5749461aaaf11bd0e45a4ca"
     }
   ],
-  "last_success_at": "2026-10-07T10:44:49+09:00",
+  "last_success_at": "2026-10-08T10:45:10+09:00",
   "frozen_parameters": {
     "N": 5,
     "MINIMUM_MOVE": 500,
