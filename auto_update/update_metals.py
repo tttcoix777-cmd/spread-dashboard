@@ -115,17 +115,31 @@ def run(root=ROOT, site_dir=None, now=None, fetch=get_bytes):
         latest_published = datetime.strptime(dates[-1], "%Y%m%d").date()
         if latest_published > now.date() or (now.date() - latest_published).days > 4:
             raise ValueError("TFX公式価格の最終公開日が未来/4暦日超過")
-        if rows[-1]["Date"].replace("-", "") < dates[0]:
-            raise ValueError("公開日足と既存履歴に欠落があります。自動補完しません")
+        # TFX一覧は直近数日のみ。既存の公式取得原本を使って初回の未収録日をつなぐ。
+        archive_root = root / "logs/raw"
+        archives = {
+            p.stem: p for p in archive_root.glob("20??????.CSV")
+            if p.stem.isdigit() and rows[-1]["Date"].replace("-", "") <= p.stem <= dates[-1]
+        }
+        all_days = sorted(set(dates) | set(archives))
+        previous_day = rows[-1]["Date"].replace("-", "")
+        if previous_day < dates[0] and not any(previous_day < d < dates[0] for d in archives):
+            raise ValueError("前回価格から公式公開期間までの履歴がありません。欠落価格を手動照合してください")
         added, sources = [], []
-        for stamp_day in dates:
+        for stamp_day in all_days:
             day = datetime.strptime(stamp_day, "%Y%m%d").date().isoformat()
             if day < rows[-1]["Date"]:
                 continue
             url = "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-" + stamp_day + ".CSV"
-            raw = fetch(url)
+            if stamp_day in dates:
+                raw = fetch(url)
+                origin = "TFX official daily CSV"
+            else:
+                raw = archives[stamp_day].read_bytes()
+                origin = "Previously archived TFX daily CSV"
             row = read_daily(raw, day)
-            sources.append({"date": day, "url": url, "sha256": hashlib.sha256(raw).hexdigest()})
+            sources.append({"date": day, "url": url if stamp_day in dates else None,
+                            "origin": origin, "sha256": hashlib.sha256(raw).hexdigest()})
             if day == rows[-1]["Date"]:
                 if any(abs(row[leg] - rows[-1][leg]) > 0.000001 for leg in CODES):
                     raise ValueError("既存価格とTFX公式終値が不一致: " + day)
