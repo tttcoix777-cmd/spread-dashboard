@@ -1,0 +1,126 @@
+{
+  "last_attempt_at": "2026-10-15T10:59:14+09:00",
+  "schedule_time_jst": "10:30",
+  "error": "",
+  "update_status": "UPDATED",
+  "stale_attempt_hours": 36,
+  "added_dates": [
+    "2026-10-14"
+  ],
+  "latest": {
+    "date": "2026-10-14",
+    "nikkei225_open": 67909.0,
+    "nikkei225_close": 66633.0,
+    "ny_dow_open": 51661.0,
+    "ny_dow_close": 51631.0,
+    "spread": -15002.0,
+    "change": 1384.0,
+    "ma20": -16022.35,
+    "ma50": -14015.78,
+    "spread_10d_change": 1011.0,
+    "pullback_move": 888.0,
+    "signal_b": false,
+    "signal_c2": false,
+    "signal_state": "NO SIGNAL"
+  },
+  "data_date": "2026-10-14",
+  "products": {
+    "nikkei225": {
+      "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+      "code": "N26/JPY",
+      "form_name": "HistoricalCfdData[product_type1][]",
+      "year": 2026
+    },
+    "ny_dow": {
+      "name": "NYダウ リセット付証拠金取引（DJIA）2026",
+      "code": "D26/JPY",
+      "form_name": "HistoricalCfdData[product_type1][]",
+      "year": 2026
+    }
+  },
+  "available_products": [
+    "日経 225 リセット付証拠金取引（Nikkei 225）2027",
+    "NYダウ リセット付証拠金取引（DJIA）2027",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+    "NYダウ リセット付証拠金取引（DJIA）2026",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2025",
+    "NYダウ リセット付証拠金取引（DJIA）2025",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2024",
+    "NYダウ リセット付証拠金取引（DJIA）2024",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2023",
+    "NYダウ リセット付証拠金取引（DJIA）2023",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2022",
+    "NYダウ リセット付証拠金取引（DJIA）2022",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2021",
+    "NYダウ リセット付証拠金取引（DJIA）2021"
+  ],
+  "verified_lifecycle": {
+    "nikkei225": {
+      "start": "2025-09-15",
+      "last_trade": "2026-12-10",
+      "reset": "2026-12-11"
+    },
+    "ny_dow": {
+      "start": "2025-09-15",
+      "last_trade": "2026-12-17",
+      "reset": "2026-12-21"
+    }
+  },
+  "sources": [
+    {
+      "date": "2026-10-13",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261013.CSV",
+      "sha256": "cf125183282462cb565cf5d6dece85f83914f5dfd129c59f1d00c83dffaf4422"
+    },
+    {
+      "date": "2026-10-14",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261014.CSV",
+      "sha256": "33fa08d694fcfd680b52af49ffaab3da866ca3e97889a663e9b5761a0874151d"
+    }
+  ],
+  "last_success_at": "2026-10-15T10:59:14+09:00",
+  "frozen_parameters": {
+    "N": 5,
+    "MINIMUM_MOVE": 500,
+    "SHORT_MA": 20,
+    "LONG_MA": 50,
+    "PULLBACK_MINIMUM_MOVE": 500,
+    "TAKE_PROFIT_SPREAD": 1000,
+    "STOP_LOSS_SPREAD": 2000,
+    "MAX_HOLDING_DAYS": 30
+  },
+  "positions": {
+    "B": {
+      "kind": "OOS_SIMULATED_NOT_ACTUAL",
+      "position": {
+        "entry_date": "2026-10-12",
+        "entry_spread": -17434.0,
+        "signal_date": "2026-10-09",
+        "holding_days": 3,
+        "unrealized_points": -2432.0,
+        "take_profit_spread": -18434.0,
+        "stop_loss_spread": -15434.0
+      },
+      "pending_entry_signal_date": null,
+      "pending_exit": "stop_loss",
+      "entry_candidate": false,
+      "closed_trades": []
+    },
+    "C2": {
+      "kind": "OOS_SIMULATED_NOT_ACTUAL",
+      "position": {
+        "entry_date": "2026-10-12",
+        "entry_spread": -17434.0,
+        "signal_date": "2026-10-09",
+        "holding_days": 3,
+        "unrealized_points": -2432.0,
+        "take_profit_spread": -18434.0,
+        "stop_loss_spread": -15434.0
+      },
+      "pending_entry_signal_date": null,
+      "pending_exit": "stop_loss",
+      "entry_candidate": false,
+      "closed_trades": []
+    }
+  }
+}
