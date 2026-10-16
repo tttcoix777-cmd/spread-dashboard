@@ -1,10 +1,12 @@
 {
-  "last_attempt_at": "2026-10-15T15:04:56+09:00",
+  "last_attempt_at": "2026-10-16T10:59:28+09:00",
   "schedule_time_jst": "10:30",
   "error": "",
-  "update_status": "NO_NEW_DATA",
+  "update_status": "UPDATED",
   "stale_attempt_hours": 36,
-  "added_dates": [],
+  "added_dates": [
+    "2026-10-15"
+  ],
   "history": [
     {
       "date": "2026-01-02",
@@ -1433,25 +1435,32 @@
       "ny_dow_close": 51631.0,
       "nikkei225_open": 67909.0,
       "nikkei225_close": 66633.0
+    },
+    {
+      "date": "2026-10-15",
+      "nikkei225_open": 66150.0,
+      "nikkei225_close": 65667.0,
+      "ny_dow_open": 51661.0,
+      "ny_dow_close": 52224.0
     }
   ],
   "latest": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
+    "nikkei225_open": 66150.0,
+    "nikkei225_close": 65667.0,
     "ny_dow_open": 51661.0,
-    "ny_dow_close": 51631.0,
-    "nikkei225_open": 67909.0,
-    "nikkei225_close": 66633.0,
-    "spread": -15002.0,
-    "change": 1384.0,
-    "ma20": -16022.35,
-    "ma50": -14015.78,
-    "spread_10d_change": 1011.0,
-    "pullback_move": 888.0,
+    "ny_dow_close": 52224.0,
+    "spread": -13443.0,
+    "change": 1559.0,
+    "ma20": -16033.9,
+    "ma50": -14050.08,
+    "spread_10d_change": 3984.0,
+    "pullback_move": 2272.0,
     "signal_b": false,
     "signal_c2": false,
     "signal_state": "NO SIGNAL"
   },
-  "data_date": "2026-10-14",
+  "data_date": "2026-10-15",
   "products": {
     "nikkei225": {
       "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
@@ -1499,9 +1508,14 @@
       "date": "2026-10-14",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261014.CSV",
       "sha256": "33fa08d694fcfd680b52af49ffaab3da866ca3e97889a663e9b5761a0874151d"
+    },
+    {
+      "date": "2026-10-15",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261015.CSV",
+      "sha256": "27ce8855e50ba85238f5f00deaaa979368d034c299a39f90aa7b638924bc8d9d"
     }
   ],
-  "last_success_at": "2026-10-15T15:04:56+09:00",
+  "last_success_at": "2026-10-16T10:59:28+09:00",
   "frozen_parameters": {
     "N": 5,
     "MINIMUM_MOVE": 500,
@@ -1515,35 +1529,45 @@
   "positions": {
     "B": {
       "kind": "OOS_SIMULATED_NOT_ACTUAL",
-      "position": {
-        "entry_date": "2026-10-12",
-        "entry_spread": -17434.0,
-        "signal_date": "2026-10-09",
-        "holding_days": 3,
-        "unrealized_points": -2432.0,
-        "take_profit_spread": -18434.0,
-        "stop_loss_spread": -15434.0
-      },
+      "position": null,
       "pending_entry_signal_date": null,
-      "pending_exit": "stop_loss",
+      "pending_exit": null,
       "entry_candidate": false,
-      "closed_trades": []
+      "closed_trades": [
+        {
+          "entry_date": "2026-10-12",
+          "entry_spread": -17434.0,
+          "signal_date": "2026-10-09",
+          "entry_index": 201,
+          "holding_days": 3,
+          "unrealized_points": -2432.0,
+          "exit_date": "2026-10-15",
+          "exit_spread": -14489.0,
+          "pnl": -2945.0,
+          "exit_reason": "stop_loss"
+        }
+      ]
     },
     "C2": {
       "kind": "OOS_SIMULATED_NOT_ACTUAL",
-      "position": {
-        "entry_date": "2026-10-12",
-        "entry_spread": -17434.0,
-        "signal_date": "2026-10-09",
-        "holding_days": 3,
-        "unrealized_points": -2432.0,
-        "take_profit_spread": -18434.0,
-        "stop_loss_spread": -15434.0
-      },
+      "position": null,
       "pending_entry_signal_date": null,
-      "pending_exit": "stop_loss",
+      "pending_exit": null,
       "entry_candidate": false,
-      "closed_trades": []
+      "closed_trades": [
+        {
+          "entry_date": "2026-10-12",
+          "entry_spread": -17434.0,
+          "signal_date": "2026-10-09",
+          "entry_index": 201,
+          "holding_days": 3,
+          "unrealized_points": -2432.0,
+          "exit_date": "2026-10-15",
+          "exit_spread": -14489.0,
+          "pnl": -2945.0,
+          "exit_reason": "stop_loss"
+        }
+      ]
     }
   }
 }
