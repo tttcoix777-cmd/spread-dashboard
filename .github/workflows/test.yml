@@ -18,3 +18,6 @@ jobs:
       - run: python -m unittest discover -s auto_update/tests -v
       - run: node tests/bands.test.cjs
       - run: node tests/viewer.test.cjs
+      - run: node tests/viewer-v2.test.cjs
+      - run: node scripts/audit-viewer.cjs
+      - run: git diff --exit-code -- dist/metals-viewer-audit.json dist/viewer-v1-gaps.csv dist/viewer-v2-gaps.csv

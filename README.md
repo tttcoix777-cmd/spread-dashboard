@@ -1,5 +1,7 @@
 # 統合サヤ管理
 
+Viewer V2の連続系列・線切れ修正・ロール方式比較と検証は [README_VIEWER_V2.md](README_VIEWER_V2.md) を参照してください。V1の年限別表示と原本価格を維持します。
+
 金・銀・プラチナの独立Viewer（価格データ・計算仕様・テスト・公開先の違い）は [README_VIEWER.md](README_VIEWER.md) を参照してください。
 
 銀−プラチナ **固定V3** / 日経225−NYダウ **Candidate C2** の統合ダッシュボードです。

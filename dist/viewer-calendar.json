@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "holidays": {
+    "2023-12-25": {"reason":"クリスマス休業", "source":"https://www.clickkabu365.jp/newsfile/article/20231201-60"},
+    "2024-03-29": {"reason":"Good Friday休業", "source":"https://www.clickkabu365.jp/newsfile/article/20240202-01"},
+    "2024-12-25": {"reason":"クリスマス休業", "source":"https://www.clickkabu365.jp/newsfile/article/20241206-02"},
+    "2025-04-18": {"reason":"Good Friday休業", "source":"https://www.clickkabu365.jp/newsfile/article/20250303-11"},
+    "2025-12-25": {"reason":"クリスマス休業", "source":"https://www.clickkabu365.jp/newsfile/article/20251208-01"},
+    "2026-04-03": {"reason":"Good Friday休業", "source":"https://www.clickkabu365.jp/newsfile/article/20260303-10"}
+  },
+  "contracts": {
+    "2024": {"start":"2023-09-11", "last_trade":"2024-12-19", "source":"https://www.clickkabu365.jp/newsfile/article/20241118-01"},
+    "2025": {"start":"2024-09-16", "last_trade":"2025-12-18", "source":"https://www.clickkabu365.jp/newsfile/article/20251117-01"},
+    "2026": {"start":"2025-09-15", "last_trade":"2026-12-17", "source":"https://www.clickkabu365.jp/newsfile/article/20250815-10"},
+    "2027": {"start":"2026-09-14", "last_trade":"2027-12-16", "source":"https://www.clickkabu365.jp/newsfile/article/20260814-10"}
+  }
+}
