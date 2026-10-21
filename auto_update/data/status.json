@@ -1,5 +1,5 @@
 {
-  "last_attempt_at": "2026-10-21T15:20:02+09:00",
+  "last_attempt_at": "2026-10-21T15:44:40+09:00",
   "schedule_time_jst": "10:30",
   "error": "",
   "update_status": "NO_NEW_DATA",
@@ -1529,7 +1529,7 @@
       "sha256": "77226f78f657be6836ba0d83473b81faf92aea37531ab0f958a976795e32e203"
     }
   ],
-  "last_success_at": "2026-10-21T15:20:02+09:00",
+  "last_success_at": "2026-10-21T15:44:40+09:00",
   "frozen_parameters": {
     "N": 5,
     "MINIMUM_MOVE": 500,
