@@ -1,5 +1,7 @@
 # 統合サヤ管理
 
+金・銀・プラチナの独立Viewer（価格データ・計算仕様・テスト・公開先の違い）は [README_VIEWER.md](README_VIEWER.md) を参照してください。
+
 銀−プラチナ **固定V3** / 日経225−NYダウ **Candidate C2** の統合ダッシュボードです。
 
 公開画面: `dist/` / TFX自動更新: `auto_update/`。
