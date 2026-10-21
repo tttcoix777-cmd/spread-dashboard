@@ -1,11 +1,11 @@
 {
-  "last_attempt_at": "2026-10-20T11:01:50+09:00",
+  "last_attempt_at": "2026-10-21T11:03:50+09:00",
   "schedule_time_jst": "10:30",
   "error": "",
   "update_status": "UPDATED",
   "stale_attempt_hours": 36,
   "added_dates": [
-    "2026-10-19"
+    "2026-10-20"
   ],
   "history": [
     {
@@ -1452,29 +1452,36 @@
     },
     {
       "date": "2026-10-19",
-      "nikkei225_open": 63913.0,
-      "nikkei225_close": 64569.0,
       "ny_dow_open": 52180.0,
-      "ny_dow_close": 52026.0
+      "ny_dow_close": 52026.0,
+      "nikkei225_open": 63913.0,
+      "nikkei225_close": 64569.0
+    },
+    {
+      "date": "2026-10-20",
+      "nikkei225_open": 64743.0,
+      "nikkei225_close": 64832.0,
+      "ny_dow_open": 52025.0,
+      "ny_dow_close": 52500.0
     }
   ],
   "latest": {
-    "date": "2026-10-19",
-    "nikkei225_open": 63913.0,
-    "nikkei225_close": 64569.0,
-    "ny_dow_open": 52180.0,
-    "ny_dow_close": 52026.0,
-    "spread": -12543.0,
-    "change": -712.0,
-    "ma20": -15853.65,
-    "ma50": -14035.22,
-    "spread_10d_change": 6179.0,
-    "pullback_move": 5443.0,
-    "signal_b": true,
+    "date": "2026-10-20",
+    "nikkei225_open": 64743.0,
+    "nikkei225_close": 64832.0,
+    "ny_dow_open": 52025.0,
+    "ny_dow_close": 52500.0,
+    "spread": -12332.0,
+    "change": 211.0,
+    "ma20": -15706.5,
+    "ma50": -14014.96,
+    "spread_10d_change": 6870.0,
+    "pullback_move": 0.0,
+    "signal_b": false,
     "signal_c2": false,
-    "signal_state": "B SIGNAL"
+    "signal_state": "NO SIGNAL"
   },
-  "data_date": "2026-10-19",
+  "data_date": "2026-10-20",
   "products": {
     "nikkei225": {
       "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
@@ -1519,17 +1526,17 @@
   },
   "sources": [
     {
-      "date": "2026-10-16",
-      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261016.CSV",
-      "sha256": "0a2fbc1ccff224ef40ba7467bc4fa9d7d050cf76e7b0ad0b5821168218afbc2e"
-    },
-    {
       "date": "2026-10-19",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261019.CSV",
       "sha256": "2c0c9dd7138337b49f93580034113c2502a314756709050ac0a4404f717234f7"
+    },
+    {
+      "date": "2026-10-20",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261020.CSV",
+      "sha256": "77226f78f657be6836ba0d83473b81faf92aea37531ab0f958a976795e32e203"
     }
   ],
-  "last_success_at": "2026-10-20T11:01:50+09:00",
+  "last_success_at": "2026-10-21T11:03:50+09:00",
   "frozen_parameters": {
     "N": 5,
     "MINIMUM_MOVE": 500,
@@ -1543,10 +1550,18 @@
   "positions": {
     "B": {
       "kind": "OOS_SIMULATED_NOT_ACTUAL",
-      "position": null,
-      "pending_entry_signal_date": "2026-10-19",
+      "position": {
+        "entry_date": "2026-10-20",
+        "entry_spread": -12718.0,
+        "signal_date": "2026-10-19",
+        "holding_days": 1,
+        "unrealized_points": -386.0,
+        "take_profit_spread": -13718.0,
+        "stop_loss_spread": -10718.0
+      },
+      "pending_entry_signal_date": null,
       "pending_exit": null,
-      "entry_candidate": true,
+      "entry_candidate": false,
       "closed_trades": [
         {
           "entry_date": "2026-10-12",
