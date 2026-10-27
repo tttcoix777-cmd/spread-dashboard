@@ -1,10 +1,12 @@
 {
-  "last_attempt_at": "2026-10-26T11:08:39+09:00",
+  "last_attempt_at": "2026-10-27T11:06:40+09:00",
   "schedule_time_jst": "10:30",
   "error": "",
-  "update_status": "NO_NEW_DATA",
+  "update_status": "UPDATED",
   "stale_attempt_hours": 36,
-  "added_dates": [],
+  "added_dates": [
+    "2026-10-26"
+  ],
   "history": [
     {
       "date": "2026-01-02",
@@ -1482,25 +1484,32 @@
       "ny_dow_close": 52199.0,
       "nikkei225_open": 62262.0,
       "nikkei225_close": 62539.0
+    },
+    {
+      "date": "2026-10-26",
+      "nikkei225_open": 62783.0,
+      "nikkei225_close": 62740.0,
+      "ny_dow_open": 52246.0,
+      "ny_dow_close": 52348.0
     }
   ],
   "latest": {
-    "date": "2026-10-23",
-    "ny_dow_open": 52922.0,
-    "ny_dow_close": 52199.0,
-    "nikkei225_open": 62262.0,
-    "nikkei225_close": 62539.0,
-    "spread": -10340.0,
-    "change": -639.0,
-    "ma20": -15110.15,
-    "ma50": -13754.26,
-    "spread_10d_change": 6934.0,
-    "pullback_move": 2842.0,
-    "signal_b": true,
+    "date": "2026-10-26",
+    "nikkei225_open": 62783.0,
+    "nikkei225_close": 62740.0,
+    "ny_dow_open": 52246.0,
+    "ny_dow_close": 52348.0,
+    "spread": -10392.0,
+    "change": -52.0,
+    "ma20": -14903.1,
+    "ma50": -13649.74,
+    "spread_10d_change": 6060.0,
+    "pullback_move": 0.0,
+    "signal_b": false,
     "signal_c2": false,
-    "signal_state": "B SIGNAL"
+    "signal_state": "NO SIGNAL"
   },
-  "data_date": "2026-10-23",
+  "data_date": "2026-10-26",
   "products": {
     "nikkei225": {
       "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
@@ -1548,9 +1557,14 @@
       "date": "2026-10-23",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261023.CSV",
       "sha256": "cfbafb99d0b62f8560388e8fad75fee2a4a6b34246eae89bf6c213b51170a0de"
+    },
+    {
+      "date": "2026-10-26",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261026.CSV",
+      "sha256": "560c4ae6f9f2ae5df9927b196559fe4d0e0e98e80d5013dd59f2ee66ec18b0ce"
     }
   ],
-  "last_success_at": "2026-10-26T11:08:39+09:00",
+  "last_success_at": "2026-10-27T11:06:40+09:00",
   "frozen_parameters": {
     "N": 5,
     "MINIMUM_MOVE": 500,
@@ -1564,10 +1578,18 @@
   "positions": {
     "B": {
       "kind": "OOS_SIMULATED_NOT_ACTUAL",
-      "position": null,
-      "pending_entry_signal_date": "2026-10-23",
+      "position": {
+        "entry_date": "2026-10-26",
+        "entry_spread": -10537.0,
+        "signal_date": "2026-10-23",
+        "holding_days": 1,
+        "unrealized_points": -145.0,
+        "take_profit_spread": -11537.0,
+        "stop_loss_spread": -8537.0
+      },
+      "pending_entry_signal_date": null,
       "pending_exit": null,
-      "entry_candidate": true,
+      "entry_candidate": false,
       "closed_trades": [
         {
           "entry_date": "2026-10-12",
