@@ -1,0 +1,156 @@
+{
+  "last_attempt_at": "2026-10-28T11:15:29+09:00",
+  "schedule_time_jst": "10:30",
+  "error": "",
+  "update_status": "UPDATED",
+  "stale_attempt_hours": 36,
+  "added_dates": [
+    "2026-10-27"
+  ],
+  "latest": {
+    "date": "2026-10-27",
+    "nikkei225_open": 62950.0,
+    "nikkei225_close": 64322.0,
+    "ny_dow_open": 52356.0,
+    "ny_dow_close": 52423.0,
+    "spread": -11899.0,
+    "change": -1507.0,
+    "ma20": -14760.25,
+    "ma50": -13628.22,
+    "spread_10d_change": 4487.0,
+    "pullback_move": 0.0,
+    "signal_b": false,
+    "signal_c2": false,
+    "signal_state": "NO SIGNAL"
+  },
+  "data_date": "2026-10-27",
+  "products": {
+    "nikkei225": {
+      "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+      "code": "N26/JPY",
+      "form_name": "HistoricalCfdData[product_type1][]",
+      "year": 2026
+    },
+    "ny_dow": {
+      "name": "NYダウ リセット付証拠金取引（DJIA）2026",
+      "code": "D26/JPY",
+      "form_name": "HistoricalCfdData[product_type1][]",
+      "year": 2026
+    }
+  },
+  "available_products": [
+    "日経 225 リセット付証拠金取引（Nikkei 225）2027",
+    "NYダウ リセット付証拠金取引（DJIA）2027",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2026",
+    "NYダウ リセット付証拠金取引（DJIA）2026",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2025",
+    "NYダウ リセット付証拠金取引（DJIA）2025",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2024",
+    "NYダウ リセット付証拠金取引（DJIA）2024",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2023",
+    "NYダウ リセット付証拠金取引（DJIA）2023",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2022",
+    "NYダウ リセット付証拠金取引（DJIA）2022",
+    "日経 225 リセット付証拠金取引（Nikkei 225）2021",
+    "NYダウ リセット付証拠金取引（DJIA）2021"
+  ],
+  "verified_lifecycle": {
+    "nikkei225": {
+      "start": "2025-09-15",
+      "last_trade": "2026-12-10",
+      "reset": "2026-12-11"
+    },
+    "ny_dow": {
+      "start": "2025-09-15",
+      "last_trade": "2026-12-17",
+      "reset": "2026-12-21"
+    }
+  },
+  "sources": [
+    {
+      "date": "2026-10-26",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261026.CSV",
+      "sha256": "560c4ae6f9f2ae5df9927b196559fe4d0e0e98e80d5013dd59f2ee66ec18b0ce"
+    },
+    {
+      "date": "2026-10-27",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261027.CSV",
+      "sha256": "bcebdf9956dad51d681a98fe19b6f046cc87303600993a56f69188520ce52619"
+    }
+  ],
+  "last_success_at": "2026-10-28T11:15:29+09:00",
+  "frozen_parameters": {
+    "N": 5,
+    "MINIMUM_MOVE": 500,
+    "SHORT_MA": 20,
+    "LONG_MA": 50,
+    "PULLBACK_MINIMUM_MOVE": 500,
+    "TAKE_PROFIT_SPREAD": 1000,
+    "STOP_LOSS_SPREAD": 2000,
+    "MAX_HOLDING_DAYS": 30
+  },
+  "positions": {
+    "B": {
+      "kind": "OOS_SIMULATED_NOT_ACTUAL",
+      "position": {
+        "entry_date": "2026-10-26",
+        "entry_spread": -10537.0,
+        "signal_date": "2026-10-23",
+        "holding_days": 2,
+        "unrealized_points": 1362.0,
+        "take_profit_spread": -11537.0,
+        "stop_loss_spread": -8537.0
+      },
+      "pending_entry_signal_date": null,
+      "pending_exit": "take_profit",
+      "entry_candidate": false,
+      "closed_trades": [
+        {
+          "entry_date": "2026-10-12",
+          "entry_spread": -17434.0,
+          "signal_date": "2026-10-09",
+          "entry_index": 201,
+          "holding_days": 3,
+          "unrealized_points": -2432.0,
+          "exit_date": "2026-10-15",
+          "exit_spread": -14489.0,
+          "pnl": -2945.0,
+          "exit_reason": "stop_loss"
+        },
+        {
+          "entry_date": "2026-10-20",
+          "entry_spread": -12718.0,
+          "signal_date": "2026-10-19",
+          "entry_index": 207,
+          "holding_days": 3,
+          "unrealized_points": -3017.0,
+          "exit_date": "2026-10-23",
+          "exit_spread": -9340.0,
+          "pnl": -3378.0,
+          "exit_reason": "stop_loss"
+        }
+      ]
+    },
+    "C2": {
+      "kind": "OOS_SIMULATED_NOT_ACTUAL",
+      "position": null,
+      "pending_entry_signal_date": null,
+      "pending_exit": null,
+      "entry_candidate": false,
+      "closed_trades": [
+        {
+          "entry_date": "2026-10-12",
+          "entry_spread": -17434.0,
+          "signal_date": "2026-10-09",
+          "entry_index": 201,
+          "holding_days": 3,
+          "unrealized_points": -2432.0,
+          "exit_date": "2026-10-15",
+          "exit_spread": -14489.0,
+          "pnl": -2945.0,
+          "exit_reason": "stop_loss"
+        }
+      ]
+    }
+  }
+}
