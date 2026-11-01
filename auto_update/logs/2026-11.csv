@@ -1,0 +1,2 @@
+attempt_at,date,dow,nikkei,spread,ma20,ma50,spread_10d_change,signal_b,signal_c2,update_status,error
+2026-11-01T11:18:46+09:00,2026-10-30,51750.0,62510.0,-10760.0,-13941.3,-13580.08,1071.0,False,False,NO_NEW_DATA,
