@@ -11046,6 +11046,20 @@
       "Platinum": 20688.0,
       "date": "2026-11-02",
       "contract": "2027"
+    },
+    {
+      "Gold": 56957.0,
+      "Silver": 7126.2,
+      "Platinum": 20285.0,
+      "date": "2026-11-03",
+      "contract": "2026"
+    },
+    {
+      "Gold": 57093.0,
+      "Silver": 7150.9,
+      "Platinum": 20362.0,
+      "date": "2026-11-03",
+      "contract": "2027"
     }
   ],
   "sources": [
@@ -17333,6 +17347,11 @@
       "date": "2026-11-02",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261102.CSV",
       "sha256": "b783514827eb6c69e5f13b4af6eaef7eed14ade649af348bf53dfa06e303e686"
+    },
+    {
+      "date": "2026-11-03",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261103.CSV",
+      "sha256": "1fa074845ab8892f4b0a5c23ee35a841326326f7912f6f030240d09d4b319785"
     }
   ]
 }
