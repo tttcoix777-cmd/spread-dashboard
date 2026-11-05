@@ -37,7 +37,7 @@ section = function(kind) {
     '<div class="auto-manual">銀−Ptは手動CSVを表示中です。自動データは下のボタンで復帰できます。</div>' :
     h.ok ? '<div class="auto-ok"><strong>'+stateText+'</strong><span>TFX更新確認済み / 価格日 '+esc(s.data_date)+'</span></div>' :
     '<div class="auto-failed" role="alert"><strong>DATA UPDATE ERROR / 未確認</strong><span>'+esc(h.error)+'</span><p>保存済み最終日：'+esc(r.date)+'。この値から新規取引を判断しないでください。</p></div>';
-  const meta='<div class="auto-meta"><span>最終試行：'+esc(s?.last_attempt_at||'未確認')+'</span><span>最終正常更新：'+esc(s?.last_success_at||'未確認')+'</span><span>更新予定：毎日10:30頃（日本時間）</span><button type="button" data-metals-reload>自動データに戻す / 再確認</button></div>';
+  const meta='<div class="auto-meta"><span>最終試行：'+esc(s?.last_attempt_at||'未確認')+'</span><span>最終正常更新：'+esc(s?.last_success_at||'未確認')+'</span><span>更新予定：平日10:30〜13:30の毎時（日本時間）</span><button type="button" data-metals-reload>自動データに戻す / 再確認</button></div>';
   html=html.replace('<div class="metrics">',banner+meta+'<div class="metrics">');
   if(!h.ok) html=html.replace('最新サヤ','保存済みサヤ（参考）');
   return html;
