@@ -2,7 +2,8 @@ name: TFX daily update and publish
 
 on:
   schedule:
-    - cron: '30 1 * * *'  # 日本時間10:30（UTC 01:30）。遅延する場合があります。
+    # TFXの前営業日CSVは翌営業日午前に公開。10:30の取得に間に合わない場合に備え、13:30まで毎時再確認。
+    - cron: '30 1-4 * * 1-5'  # JST 10:30, 11:30, 12:30, 13:30（UTC 01:30-04:30、月〜金）
   workflow_dispatch:
   push:
     branches: [main]
