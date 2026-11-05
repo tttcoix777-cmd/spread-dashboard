@@ -240,7 +240,7 @@ def run(root=ROOT, site_dir=None, now=None, fetch=get_bytes):
     frozen = json.loads((root / "frozen_settings.json").read_text(encoding="utf-8"))
     status_file = root / "data/status.json"
     old = json.loads(status_file.read_text(encoding="utf-8")) if status_file.exists() else {}
-    payload = {**old, "last_attempt_at": stamp, "schedule_time_jst": "10:30", "error": "",
+    payload = {**old, "last_attempt_at": stamp, "schedule_time_jst": "平日10:30〜13:30（毎時）", "error": "",
                "update_status": "DATA UPDATE ERROR", "stale_attempt_hours": config["stale_attempt_hours"]}
     error = None
     history = []
