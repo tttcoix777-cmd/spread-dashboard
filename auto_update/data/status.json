@@ -1,5 +1,5 @@
 {
-  "last_attempt_at": "2026-11-06T17:17:44+09:00",
+  "last_attempt_at": "2026-11-06T18:36:12+09:00",
   "schedule_time_jst": "平日10:30〜13:30（毎時）",
   "error": "",
   "update_status": "NO_NEW_DATA",
@@ -1613,7 +1613,7 @@
       "sha256": "88c5235c250e4b138734eab67e64c7731e7b5a6b5e15163351122c0e42f2e776"
     }
   ],
-  "last_success_at": "2026-11-06T17:17:44+09:00",
+  "last_success_at": "2026-11-06T18:36:12+09:00",
   "frozen_parameters": {
     "N": 5,
     "MINIMUM_MOVE": 500,
