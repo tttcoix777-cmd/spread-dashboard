@@ -1,24 +1,32 @@
 {
-  "last_attempt_at": "2026-11-05T13:32:12+09:00",
+  "last_attempt_at": "2026-11-06T11:30:36+09:00",
   "error": "",
-  "update_status": "NO_NEW_DATA",
-  "added_dates": [],
-  "data_date": "2026-11-04",
+  "update_status": "UPDATED",
+  "added_dates": [
+    "2026-11-05"
+  ],
+  "data_date": "2026-11-05",
   "latest": {
-    "date": "2026-11-04",
-    "silver": 7494.5,
-    "platinum": 21500.0,
-    "spread": 983.5,
+    "date": "2026-11-05",
+    "silver": 7420.3,
+    "platinum": 21642.0,
+    "spread": 618.9000000000015,
     "v3": 0,
-    "change": -110.09999999999854
+    "change": -364.59999999999854
   },
-  "last_success_at": "2026-11-05T13:32:12+09:00",
+  "last_success_at": "2026-11-06T11:30:36+09:00",
   "sources": [
     {
       "date": "2026-11-04",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261104.CSV",
       "origin": "TFX official daily CSV",
       "sha256": "dda5c0a9c658a202273fa7fa0a563b2c6278c1b74923f56da62faaef7e3386c8"
+    },
+    {
+      "date": "2026-11-05",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261105.CSV",
+      "origin": "TFX official daily CSV",
+      "sha256": "88c5235c250e4b138734eab67e64c7731e7b5a6b5e15163351122c0e42f2e776"
     }
   ],
   "v3_frozen": true,
