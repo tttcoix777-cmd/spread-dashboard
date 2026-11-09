@@ -1,6 +1,6 @@
 name: TFX daily update and publish
 
-# 2026-11-06: one-time kick after today's scheduled run was missed; normal updates remain automated.
+# 2026-11-09: manual recovery kick after the scheduled run was missed; normal updates remain automated.
 on:
   schedule:
     # TFXの前営業日CSVは翌営業日午前に公開。11時通知前にも再確認し、遅延に備えて13:30まで取得を続ける。
