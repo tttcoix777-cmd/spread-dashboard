@@ -1,11 +1,11 @@
 name: TFX daily update and publish
 
-# 2026-11-09: manual recovery kick after the scheduled run was missed; normal updates remain automated.
+# 2026-11-10: reduce GitHub schedule-delay risk with staggered off-peak retries; 11:00 monitor is the recovery backstop.
 on:
   schedule:
-    # TFXの前営業日CSVは翌営業日午前に公開。11時通知前にも再確認し、遅延に備えて13:30まで取得を続ける。
-    - cron: '30,45 1 * * 1-5'  # JST 10:30, 10:45（UTC 01:30, 01:45）
-    - cron: '30 2-4 * * 1-5'  # JST 11:30, 12:30, 13:30（UTC 02:30-04:30）
+    # GitHubのscheduleは混雑時に遅延・欠落し得るため、正時・30分を避けて複数回再試行する。
+    # JST 09:07〜13:47（UTC 00:07〜04:47）、平日の各時07/27/47分。
+    - cron: '7,27,47 0-4 * * 1-5'
   workflow_dispatch:
   push:
     branches: [main]
