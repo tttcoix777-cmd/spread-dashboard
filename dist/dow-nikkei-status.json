@@ -1,12 +1,10 @@
 {
-  "last_attempt_at": "2026-11-11T10:58:08+09:00",
+  "last_attempt_at": "2026-11-11T14:59:08+09:00",
   "schedule_time_jst": "平日10:30〜13:30（毎時）",
   "error": "",
-  "update_status": "UPDATED",
+  "update_status": "NO_NEW_DATA",
   "stale_attempt_hours": 36,
-  "added_dates": [
-    "2026-11-10"
-  ],
+  "added_dates": [],
   "history": [
     {
       "date": "2026-01-02",
@@ -1564,18 +1562,18 @@
     },
     {
       "date": "2026-11-10",
-      "nikkei225_open": 60891.0,
-      "nikkei225_close": 60002.0,
       "ny_dow_open": 52444.0,
-      "ny_dow_close": 52250.0
+      "ny_dow_close": 52250.0,
+      "nikkei225_open": 60891.0,
+      "nikkei225_close": 60002.0
     }
   ],
   "latest": {
     "date": "2026-11-10",
-    "nikkei225_open": 60891.0,
-    "nikkei225_close": 60002.0,
     "ny_dow_open": 52444.0,
     "ny_dow_close": 52250.0,
+    "nikkei225_open": 60891.0,
+    "nikkei225_close": 60002.0,
     "spread": -7752.0,
     "change": 705.0,
     "ma20": -10781.4,
@@ -1631,17 +1629,12 @@
   },
   "sources": [
     {
-      "date": "2026-11-09",
-      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261109.CSV",
-      "sha256": "4f1a3b69a8bef750fd6b1363fac1328b3094a43c101e21e0e2e8b1b083fc5a75"
-    },
-    {
       "date": "2026-11-10",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261110.CSV",
       "sha256": "aee01f2507be61ff1b8c463273e4f9b11aeaf98099373bb6d66f4fcdf1bebfd3"
     }
   ],
-  "last_success_at": "2026-11-11T10:58:08+09:00",
+  "last_success_at": "2026-11-11T14:59:08+09:00",
   "frozen_parameters": {
     "N": 5,
     "MINIMUM_MOVE": 500,
