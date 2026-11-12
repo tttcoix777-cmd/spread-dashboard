@@ -1,6 +1,6 @@
 name: TFX daily update and publish
 
-# recovery kick 2026-11-11 10:58 JST; staggered schedule remains unchanged.
+# recovery kick 2026-11-12 11:01 JST; staggered schedule remains unchanged.
 on:
   schedule:
     # GitHubのscheduleは混雑時に遅延・欠落し得るため、正時・30分を避けて複数回再試行する。
