@@ -53,6 +53,26 @@
     const last=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+1,0)).getUTCDate();d.setUTCDate(Math.min(day,last));
     return rows.filter(r=>r.date>=d.toISOString().slice(0,10));
   }
-  const api={calculate,range,periodKey};
+  function strength(rows,{legs,frame='day',months=0}){
+    const buckets=new Map();
+    for(const row of rows){
+      const key=periodKey(row.date,frame);
+      if(!buckets.has(key))buckets.set(key,[]);
+      buckets.get(key).push(row);
+    }
+    const closes=[...buckets.entries()].map(([period,bucket])=>{
+      const complete=row=>legs.every(leg=>valid(row[leg]));
+      const missing=bucket.find(row=>!complete(row)&&!['closed','expired'].includes(row.quality));
+      const common=missing?null:bucket.findLast(complete);
+      const row=common||bucket.at(-1);
+      return {date:row.date,period,quality:missing?'missing':row.quality,
+        reason:missing?.reason||row.reason,close:common};
+    });
+    const visible=range(closes,months),base=visible.find(row=>row.close);
+    const points=visible.map(({close,...row})=>({...row,
+      ...Object.fromEntries(legs.map(leg=>[leg,close?100*(close[leg]/base.close[leg]):null]))}));
+    return {points,baseDate:base?.date,latest:points.findLast(row=>valid(row[legs[0]]))};
+  }
+  const api={calculate,range,periodKey,strength};
   if(typeof module==='object'&&module.exports)module.exports=api;else root.MetalsViewerMath=api;
 })(globalThis);

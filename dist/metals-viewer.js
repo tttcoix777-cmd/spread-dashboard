@@ -3,6 +3,7 @@
   'use strict';
   const host=document.getElementById('metals-viewer'),M=MetalsViewerMath,S=MetalsViewerSeries;
   const names={Gold:'金ETF',Silver:'銀ETF',Platinum:'プラチナETF'};
+  const strengthColors=['#956215','#526778','#7653a4'];
   const pairs={gs:['Gold','Silver'],gp:['Gold','Platinum'],sp:['Silver','Platinum']};
   let data=null,status=null,calendar=null,loading=null,loadError='',charts=[],rolls=[];
   const state={view:'contract',pair:'gs',contract:'2026',frame:'day',months:12,mode:'ratio',ma:true,bb1:true,bb2:true,z:true,beta:{gs:'',gp:'',sp:''}};
@@ -40,6 +41,7 @@
     let calculated=[],error='';
     try{calculated=M.calculate(rows,{a,b,frame:state.frame,mode:state.mode,beta:state.beta[state.pair]===''?null:Number(state.beta[state.pair])});}catch(e){error=e.message;try{calculated=M.calculate(rows,{a,b,frame:state.frame}).map(r=>({...r,value:null,mean:null,sd:null,z:null,upper1:null,lower1:null,upper2:null,lower2:null,indicatorReason:error}));}catch{calculated=[];}}
     const visible=M.range(calculated,state.months),last=calculated.at(-1),missing=rows.filter(r=>!(r[a]>0&&r[b]>0)).length;
+    const strength=M.strength(rows,{legs:S.legs,frame:state.frame,months:state.months});
     host.innerHTML=`<div class="sectionhead"><div><div class="titleline"><span class="section-index">03</span><h2>金属サヤチャート</h2></div><p class="formula">くりっく株365 / TFX公式確定終値 / 閲覧・比較</p></div><button type="button" data-refresh>データを再読込</button></div>
     <div class="viewer-status ${loadError||status?.error?'viewer-error':''}" role="status">${escape(loadError||status?.error||(data?'公式データ読込済み':'データを読み込んでいます…'))}<br>最終成功更新：${escape(status?.last_success_at||'未取得')}　データ最終日：${escape(status?.data_date||'—')}　最終取得試行：${escape(status?.last_attempt_at||'—')}${status?.data_date&&(Date.now()-Date.parse(status.data_date+'T00:00:00+09:00'))/86400000>4?'　⚠ データ最終日から4日超：保存済みの過去値':''}</div>
     <div class="viewer-layout"><aside class="viewer-controls card">
@@ -56,6 +58,7 @@
     <div class="viewer-plots"><div class="metrics"><div class="metric"><div class="label">現在${state.mode==='ratio'?'サヤ比':'サヤ差'}</div><div class="value">${fmt(last?.value)}</div><div class="sub">${escape(last?.date||'データなし')}</div></div><div class="metric"><div class="label">Zスコア（20期間）</div><div class="value">${fmt(last?.z,2)}</div><div class="sub">${last?.sd===0?'標準偏差0：算出不可':'(現在値 − MA) ÷ SD'}</div></div><div class="metric"><div class="label">収録・同期状況</div><div class="value viewer-small">${rows.length}日 / 欠損 ${missing}日</div><div class="sub">${escape(rows[0]?.date||'—')} 〜 ${escape(rows.at(-1)?.date||'—')}</div></div></div>
     ${error||seriesError?`<p class="viewer-status viewer-error">${escape(error||seriesError)}</p>`:''}
     ${continuous?'<div class="viewer-status viewer-analysis"><strong>分析用の調整系列：実際の約定価格・保有損益とは異なります。</strong><br>2024年限を基準に、毎年10月1日以降で旧・新年限の3金属すべての終値がそろう最初の日に係数を確定。次の帳票日から3銘柄同時に切替。新係数＝旧係数×旧終値÷新終値。過去値の事後変更なし。サヤ比・β差も調整価格から計算するため、生の価格比・損益ではありません。</div>':''}
+    ${strengthCard(strength,continuous)}
     <div class="card"><h3>${names[a]} − ${names[b]}　${state.mode==='ratio'?'サヤ比':'サヤ差'} <small>${seriesName}</small></h3><div class="legend"><span>青：サヤ</span>${state.ma?'<span>緑：20MA</span>':''}${state.bb1?'<span>橙：±1σ</span>':''}${state.bb2?'<span>薄青：±2σ</span>':''}<span>橙背景：終値なし</span>${continuous?'<span>紫破線：ロール適用日</span>':''}</div><canvas data-plot="main" aria-label="サヤ推移" role="img" tabindex="0"></canvas><output data-readout>チャートにマウスを合わせるか、左右キーで日付を選択</output></div>
     ${state.z?'<div class="card"><h3>Zスコア</h3><canvas data-plot="z" aria-label="Zスコア推移" role="img" tabindex="0"></canvas></div>':''}
     <div class="card"><h3>金・銀・プラチナの個別価格 <small>独立軸 / ${continuous?'2024年限基準の調整価格':'公式終値（円価格ポイント）'}</small></h3>${S.legs.map((leg,i)=>`<p style="color:${['#236fbd','#c28729','#7c6ab5'][i]}">${names[leg]}</p><canvas data-plot="${leg}" aria-label="${names[leg]}価格推移" role="img" tabindex="0"></canvas>`).join('')}</div>
@@ -64,9 +67,21 @@
     <p class="viewer-help">期間は最終収録日が基準。2023年9月11日以前の銀・Pt価格は生成しません。休業日の価格・サヤ・Zは欠損として線を切断し、その後の正常価格から計算を再開します。確認済み休業日が週末・月末の場合は同じ週・月の最終共通取引日を採用。未知の欠損を含む足は無効です。</p>
     <details><summary>出典・計算仕様・表示データ</summary><p><a href="https://www.tfx.co.jp/historical/cfd/" target="_blank" rel="noreferrer">TFX公式ヒストリカルデータ</a> 日次帳票の終値（列12）。原資産ETFの東証終値・現物地金・米ドル建価格とは異なります。翌営業日午前に公表、毎日10:30 JST頃に自動取得。<a href="https://www.clickkabu365.jp/start/publication/pdf/clickkabu365_pamph_notonbo.pdf" target="_blank" rel="noreferrer">取引単位の出典</a>。N=20、母標準偏差、MA±SD/2SD、Z=(現在値−MA)/SD。SD=0は算出不可。未来参照なし。</p><div class="tablewrap"><table><thead><tr><th>日付</th><th>年限</th><th>${names[a]}</th><th>${names[b]}</th><th>サヤ</th><th>MA</th><th>SD</th><th>Z</th></tr></thead><tbody>${visible.slice(-20).reverse().map(r=>`<tr><td>${r.date}</td><td>${escape(r.sourceContract)}</td>${[r.a,r.b,r.value,r.mean,r.sd,r.z].map(v=>`<td>${fmt(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></details></div></div>`;
     charts=[];
+    plot('strength',strength.points,S.legs.map((leg,i)=>[leg,strengthColors[i],2]),300);
     plot('main',visible,[['value','#236fbd',2.2],...(state.ma?[['mean','#26975d',1.4]]:[]),...(state.bb1?[['upper1','#d88738',1],['lower1','#d88738',1]]:[]),...(state.bb2?[['upper2','#73aaff',1],['lower2','#73aaff',1]]:[])],360);
     if(state.z)plot('z',visible,[['z','#8975df',1.5]],120);
     S.legs.forEach((leg,i)=>plot(leg,visible,[[leg,['#236fbd','#c28729','#7c6ab5'][i],1.5]],145));
+  }
+  function strengthValues(row){
+    return S.legs.map(leg=>names[leg]+' '+fmt(row?.[leg],2)).join(' / ');
+  }
+  function strengthCard({baseDate,latest},continuous){
+    return `<div class="card"><h3>金・銀・プラチナの強弱 <small>基準日＝100</small></h3>
+    <div class="legend">${S.legs.map((leg,i)=>`<span><strong style="color:${strengthColors[i]}">━</strong> ${names[leg]}</span>`).join('')}<span>灰色破線：100</span><span>橙背景：終値なし</span>${continuous?'<span>紫破線：ロール適用日</span>':''}</div>
+    <p class="viewer-help"><strong>基準日 ${baseDate||'—'}</strong>　<strong>最新の共通値 ${latest?.date||'—'}</strong>　${strengthValues(latest)}</p>
+    <canvas data-plot="strength" aria-label="金・銀・プラチナの相対強弱推移" role="img" tabindex="0"></canvas>
+    <output data-strength-readout>チャートにマウスを合わせるか、左右キーで日付を選択</output>
+    <p class="viewer-help">指数＝100 × 各銘柄の終値 ÷ 基準日の同銘柄の終値。基準日は表示範囲で最初に3銘柄の有効値がそろう足の採用日です。指数が105なら基準日比＋5％です。TFXの同じ円建て価格で比較し、取引単位の倍率は比率で相殺されます。円建て価格に含まれる為替の影響は残ります。${continuous?'連続表示では既存の前方比率調整後の終値を使用します。':''}週・月足は期間内の最後の共通終値を使用し、進行中の足も含みます。未確認の欠損がある足は3本とも線を切り、次の有効な足も同じ基準日で計算します。</p></div>`;
   }
   function rollTable(){
     return `<details class="card" open><summary>ロール日・原本価格差・累積調整係数（3銘柄同時）</summary><div class="tablewrap"><table><thead><tr><th>切替</th><th>係数確定日</th><th>適用日</th><th>銘柄</th><th>旧終値</th><th>新終値</th><th>新−旧</th><th>累積係数</th></tr></thead><tbody>${rolls.flatMap(e=>S.legs.map(k=>`<tr><td>${e.from}→${e.to}</td><td>${e.anchor}</td><td>${e.date}</td><td>${names[k]}</td><td>${fmt(e.prices[k].old,1)}</td><td>${fmt(e.prices[k].next,1)}</td><td>${fmt(e.prices[k].difference,1)}</td><td>${fmt(e.prices[k].factor,8)}</td></tr>`)).join('')}</tbody></table></div><p class="viewer-help">価格差は同じ係数確定日の旧・新年限の比較です。市場の日々の変動は残します。紫線は上記適用日（週・月足では該当足）。公式の自動乗換日ではなく、Viewerの分析ルールです。</p></details>`;
@@ -79,9 +94,11 @@
   function plot(id,rows,series,height){
     const canvas=$(`[data-plot="${id}"]`),ctx=canvas.getContext('2d'),w=Math.max(240,canvas.getBoundingClientRect().width),dpr=devicePixelRatio||1;
     canvas.width=w*dpr;canvas.height=height*dpr;canvas.style.height=height+'px';ctx.scale(dpr,dpr);
+    const isStrength=id==='strength';
     const left=76,right=w-14,top=12,bottom=height-27;
     const values=rows.flatMap(r=>series.map(([k])=>r[k])).filter(Number.isFinite);
     if(!values.length){ctx.fillStyle='#687582';ctx.font='14px system-ui';ctx.fillText('表示可能なデータがありません',left,50);return;}
+    if(isStrength)values.push(100);
     let min=Math.min(...values),max=Math.max(...values),pad=(max-min)*.12||1;min-=pad;max+=pad;
     const x=i=>left+(right-left)*i/Math.max(1,rows.length-1),y=v=>bottom-(bottom-top)*(v-min)/(max-min);
     const spacing=(right-left)/Math.max(1,rows.length-1);
@@ -89,6 +106,10 @@
     ctx.font='11px system-ui';ctx.fillStyle='#687582';ctx.strokeStyle='#e2e8ee';
     for(let i=0;i<5;i++){const v=min+(max-min)*i/4;ctx.beginPath();ctx.moveTo(left,y(v));ctx.lineTo(right,y(v));ctx.stroke();ctx.textAlign='right';ctx.fillText(fmt(v,id==='a'||id==='b'?1:3),left-8,y(v)+4);}
     ctx.textAlign='left';ctx.fillText(rows[0].date,left,height-6);ctx.textAlign='right';ctx.fillText(rows.at(-1).date,right,height-6);
+    if(isStrength){
+      ctx.strokeStyle='#687582';ctx.lineWidth=1;ctx.setLineDash([4,4]);
+      ctx.beginPath();ctx.moveTo(left,y(100));ctx.lineTo(right,y(100));ctx.stroke();
+    }
     ctx.strokeStyle='#9879c4';ctx.lineWidth=1;ctx.setLineDash([4,4]);
     for(const [rollIndex,event] of rolls.entries()){const i=rows.findIndex(r=>r.period===M.periodKey(event.date,state.frame));if(i<0)continue;ctx.beginPath();ctx.moveTo(x(i),top);ctx.lineTo(x(i),bottom);ctx.stroke();if(id==='main'){ctx.fillStyle='#7c5ca3';ctx.textAlign=x(i)>right-90?'right':'left';ctx.fillText(event.date,x(i)>right-90?x(i)-3:x(i)+3,top+12+(right-left<400?rollIndex%2*14:0));}}
     ctx.setLineDash([]);
@@ -96,8 +117,17 @@
       rows.forEach((r,i)=>{if(Number.isFinite(r[key])&&!Number.isFinite(rows[i-1]?.[key])&&!Number.isFinite(rows[i+1]?.[key])){ctx.fillStyle=color;ctx.beginPath();ctx.arc(x(i),y(r[key]),2.5,0,Math.PI*2);ctx.fill();}});}
     const saved=ctx.getImageData(0,0,canvas.width,canvas.height);
     const mark=i=>{ctx.putImageData(saved,0,0);ctx.beginPath();ctx.strokeStyle='#8496a8';ctx.lineWidth=1;ctx.setLineDash([3,3]);ctx.moveTo(x(i),top);ctx.lineTo(x(i),bottom);ctx.stroke();ctx.setLineDash([]);};
-    charts.push({mark});let selected=rows.length-1;
-    function select(i){selected=i;charts.forEach(c=>c.mark(i));const r=rows[i],[a,b]=pairs[state.pair];$('[data-readout]').textContent=`${r.date}　${r.sourceContract}年限　${names[a]} ${fmt(r.a,1)} / ${names[b]} ${fmt(r.b,1)}　サヤ ${fmt(r.value)}　MA ${fmt(r.mean)}　SD ${fmt(r.sd)}　Z ${fmt(r.z,2)}${state.view==='continuous'?`　原本 金 ${fmt(r.raw?.Gold,1)} / 銀 ${fmt(r.raw?.Silver,1)} / Pt ${fmt(r.raw?.Platinum,1)}`:''}　${r.reason||r.indicatorReason||''}`;}
+    if(!isStrength)charts.push({mark});let selected=rows.length-1;
+    function select(i){
+      selected=i;
+      const r=rows[i];
+      if(isStrength){
+        mark(i);
+        $('[data-strength-readout]').textContent=`${r.date}　${strengthValues(r)}　${r.reason||''}`;
+        return;
+      }
+      charts.forEach(c=>c.mark(i));
+      const [a,b]=pairs[state.pair];$('[data-readout]').textContent=`${r.date}　${r.sourceContract}年限　${names[a]} ${fmt(r.a,1)} / ${names[b]} ${fmt(r.b,1)}　サヤ ${fmt(r.value)}　MA ${fmt(r.mean)}　SD ${fmt(r.sd)}　Z ${fmt(r.z,2)}${state.view==='continuous'?`　原本 金 ${fmt(r.raw?.Gold,1)} / 銀 ${fmt(r.raw?.Silver,1)} / Pt ${fmt(r.raw?.Platinum,1)}`:''}　${r.reason||r.indicatorReason||''}`;}
     canvas.onpointermove=e=>select(Math.max(0,Math.min(rows.length-1,Math.round((e.clientX-canvas.getBoundingClientRect().left-left)/(right-left)*(rows.length-1)))));
     canvas.onkeydown=e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();select(Math.max(0,Math.min(rows.length-1,selected+(e.key==='ArrowLeft'?-1:1))));}};
   }
