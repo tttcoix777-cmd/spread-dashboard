@@ -1,10 +1,12 @@
 {
-  "last_attempt_at": "2026-11-17T16:45:59+09:00",
+  "last_attempt_at": "2026-11-18T11:01:29+09:00",
   "schedule_time_jst": "平日10:30〜13:30（毎時）",
   "error": "",
-  "update_status": "NO_NEW_DATA",
+  "update_status": "UPDATED",
   "stale_attempt_hours": 36,
-  "added_dates": [],
+  "added_dates": [
+    "2026-11-17"
+  ],
   "history": [
     {
       "date": "2026-01-02",
@@ -1594,25 +1596,32 @@
       "ny_dow_close": 51580.0,
       "nikkei225_open": 61306.0,
       "nikkei225_close": 59152.0
+    },
+    {
+      "date": "2026-11-17",
+      "nikkei225_open": 59044.0,
+      "nikkei225_close": 58844.0,
+      "ny_dow_open": 51618.0,
+      "ny_dow_close": 50752.0
     }
   ],
   "latest": {
-    "date": "2026-11-16",
-    "ny_dow_open": 52442.0,
-    "ny_dow_close": 51580.0,
-    "nikkei225_open": 61306.0,
-    "nikkei225_close": 59152.0,
-    "spread": -7572.0,
-    "change": 1074.0,
-    "ma20": -9863.45,
-    "ma50": -12779.44,
-    "spread_10d_change": 3099.0,
-    "pullback_move": 834.0,
+    "date": "2026-11-17",
+    "nikkei225_open": 59044.0,
+    "nikkei225_close": 58844.0,
+    "ny_dow_open": 51618.0,
+    "ny_dow_close": 50752.0,
+    "spread": -8092.0,
+    "change": -520.0,
+    "ma20": -9651.45,
+    "ma50": -12693.74,
+    "spread_10d_change": 3138.0,
+    "pullback_move": 1908.0,
     "signal_b": false,
     "signal_c2": false,
     "signal_state": "NO SIGNAL"
   },
-  "data_date": "2026-11-16",
+  "data_date": "2026-11-17",
   "products": {
     "nikkei225": {
       "name": "日経 225 リセット付証拠金取引（Nikkei 225）2026",
@@ -1660,9 +1669,14 @@
       "date": "2026-11-16",
       "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261116.CSV",
       "sha256": "273328e78696ef56a9f13575ca252ae73a78ad6458a2edf89ae44b22c9a85e37"
+    },
+    {
+      "date": "2026-11-17",
+      "url": "https://www.tfx.co.jp/kawase/document/PRT-010-CSV-015-20261117.CSV",
+      "sha256": "26b356e691743204f98b42afe9d795e8c92fab0e88ac1860179a86e164a0193e"
     }
   ],
-  "last_success_at": "2026-11-17T16:45:59+09:00",
+  "last_success_at": "2026-11-18T11:01:29+09:00",
   "frozen_parameters": {
     "N": 5,
     "MINIMUM_MOVE": 500,
