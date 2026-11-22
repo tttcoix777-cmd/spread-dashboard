@@ -1,9 +1,9 @@
 {
   "date": "2026-11-20",
-  "nikkei225_open": 57733.0,
-  "nikkei225_close": 54521.0,
   "ny_dow_open": 49102.0,
   "ny_dow_close": 48179.0,
+  "nikkei225_open": 57733.0,
+  "nikkei225_close": 54521.0,
   "spread": -6342.0,
   "change": 2373.0,
   "ma20": -9227.45,
