@@ -28,17 +28,16 @@ permissions:
   contents: read
 
 jobs:
-  update-publish:
+  update-build:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
       contents: write
       actions: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      pages: read
+    outputs:
+      artifact_name: ${{ steps.artifact-name.outputs.name }}
+      data_failed: ${{ steps.update.outcome == 'failure' || steps.metals.outcome == 'failure' || steps.viewer.outcome == 'failure' || steps.viewer_audit.outcome == 'failure' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -79,16 +78,35 @@ jobs:
             git push origin HEAD:main
           fi
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Set unique Pages artifact name
+        id: artifact-name
+        run: echo "name=github-pages-${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-pages-artifact@v5
         with:
+          name: ${{ steps.artifact-name.outputs.name }}
           path: dist
+
+  deploy:
+    needs: update-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Wait for Pages artifact metadata
         env:
           GH_TOKEN: ${{ github.token }}
+          ARTIFACT_NAME: ${{ needs.update-build.outputs.artifact_name }}
         run: |
           for attempt in $(seq 1 18); do
-            if count=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?name=github-pages" --jq '[.artifacts[] | select(.name == "github-pages" and .expired == false)] | length') && [ "$count" = "1" ]; then
+            if count=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?name=${ARTIFACT_NAME}" --jq '[.artifacts[] | select(.expired == false)] | length') && [ "$count" = "1" ]; then
               echo "Pages artifact is visible to the API."
+              sleep 15
               exit 0
             fi
             echo "Waiting for Pages artifact metadata (attempt $attempt/18)"
@@ -98,9 +116,11 @@ jobs:
           exit 1
       - name: Publish success or DATA UPDATE ERROR screen
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: ${{ needs.update-build.outputs.artifact_name }}
       - name: Mark data failure after publishing the warning
-        if: steps.update.outcome == 'failure' || steps.metals.outcome == 'failure' || steps.viewer.outcome == 'failure' || steps.viewer_audit.outcome == 'failure'
+        if: needs.update-build.outputs.data_failed == 'true'
         run: |
           echo "One or more TFX data updates failed. The warning status has been published; previous validated prices were retained."
           exit 1
