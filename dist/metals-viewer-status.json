@@ -1,10 +1,10 @@
 {
-  "last_attempt_at": "2026-11-27T17:12:23+09:00",
+  "last_attempt_at": "2026-11-28T10:58:06+09:00",
   "error": "",
   "update_status": "UPDATED",
-  "last_success_at": "2026-11-27T17:12:23+09:00",
-  "data_date": "2026-11-26",
+  "last_success_at": "2026-11-28T10:58:06+09:00",
+  "data_date": "2026-11-27",
   "start_date": "2022-01-03",
-  "source_days": 1275,
-  "rows": 1613
+  "source_days": 1276,
+  "rows": 1615
 }
